@@ -1,0 +1,16 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
+| Date         : Mon Oct 16 13:48:34 2023
+| Host         : HP-Z1-G8-AGV running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7vx485tffg1157-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_xadc_wiz_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_xadc_wiz_0_0 (xilinx.com:ip:xadc_wiz:3.3) from (Rev. 5) to (Rev. 8)
+

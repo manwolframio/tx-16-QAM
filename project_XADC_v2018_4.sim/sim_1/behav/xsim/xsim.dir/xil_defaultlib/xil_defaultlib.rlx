@@ -1,0 +1,18 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_Contador_26_0_0/sim/design_1_Contador_26_0_0.vhd,1728720864,vhdl,,,,design_1_contador_26_0_0,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_Contador_26_0_0/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd,1728720867,vhdl,,,,,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_Contador_52_0_0/sim/design_1_Contador_52_0_0.vhd,1728720870,vhdl,,,,design_1_contador_52_0_0,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_FSM_FIFO_Entregable_0_2/sim/design_1_FSM_FIFO_Entregable_0_2.vhd,1729072161,vhdl,,,,design_1_fsm_fifo_entregable_0_2,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v,1728930061,verilog,,,,design_1_clk_wiz_0_0,,,../../../../project_XADC_v2018_4.gen/sources_1/bd/design_1/ipshared/62b6,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v,1728930061,verilog,,C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v,,design_1_clk_wiz_0_0_clk_wiz,,,../../../../project_XADC_v2018_4.gen/sources_1/bd/design_1/ipshared/62b6,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_fifo_generator_0_0/sim/design_1_fifo_generator_0_0.v,1728723335,verilog,,C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v,,design_1_fifo_generator_0_0,,,../../../../project_XADC_v2018_4.gen/sources_1/bd/design_1/ipshared/62b6,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd,1728931689,vhdl,C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_Contador_26_0_0/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd,,,design_1_xadc_wiz_0_0,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ipshared/0ffb/src/FSM_FIFO_Entregable.vhd,1729072161,vhdl,,,,fsm_fifo_entregable,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ipshared/cbd3/src/Contador_26.vhd,1728720864,vhdl,,,,contador_26,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/ipshared/db9d/src/Contador_52.vhd,1728720870,vhdl,,,,contador_52,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.ip_user_files/bd/design_1/sim/design_1.vhd,1729072161,vhdl,,,,design_1,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,,,,,,,
+C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.srcs/sim_1/new/prueba_xadc_tb.vhd,1729075202,vhdl,,,,prueba_xadc_tb,,,,,,,,

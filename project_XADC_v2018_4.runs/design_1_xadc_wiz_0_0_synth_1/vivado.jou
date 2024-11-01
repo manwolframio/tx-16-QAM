@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Mon Oct 16 13:48:51 2023
+# Process ID: 18452
+# Current directory: C:/projs/DCEC_B1/project_XADC_v2018_4/project_XADC_v2018_4.runs/design_1_xadc_wiz_0_0_synth_1
+# Command line: vivado.exe -log design_1_xadc_wiz_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xadc_wiz_0_0.tcl
+# Log file: C:/projs/DCEC_B1/project_XADC_v2018_4/project_XADC_v2018_4.runs/design_1_xadc_wiz_0_0_synth_1/design_1_xadc_wiz_0_0.vds
+# Journal file: C:/projs/DCEC_B1/project_XADC_v2018_4/project_XADC_v2018_4.runs/design_1_xadc_wiz_0_0_synth_1\vivado.jou
+# Running On: HP-Z1-G8-AGV, OS: Windows, CPU Frequency: 2496 MHz, CPU Physical cores: 8, Host memory: 34053 MB
+#-----------------------------------------------------------
+source design_1_xadc_wiz_0_0.tcl -notrace

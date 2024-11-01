@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="prueba_xadc_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="prueba_xadc_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="644.000002 us"></ZoomEndTime>
+      <Cursor1Time time="267.825959 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="249"></NameColumnWidth>
+      <ValueColumnWidth column_width="200"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/prueba_xadc_tb/alarm_out_0" type="logic">
+      <obj_property name="ElementShortName">alarm_out_0</obj_property>
+      <obj_property name="ObjectShortName">alarm_out_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/busy_out_0" type="logic">
+      <obj_property name="ElementShortName">busy_out_0</obj_property>
+      <obj_property name="ObjectShortName">busy_out_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/channel_out_0" type="array">
+      <obj_property name="ElementShortName">channel_out_0[4:0]</obj_property>
+      <obj_property name="ObjectShortName">channel_out_0[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/dclk_in_0" type="logic">
+      <obj_property name="ElementShortName">dclk_in_0</obj_property>
+      <obj_property name="ObjectShortName">dclk_in_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/eoc_out_0" type="logic">
+      <obj_property name="ElementShortName">eoc_out_0</obj_property>
+      <obj_property name="ObjectShortName">eoc_out_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/eos_out_0" type="logic">
+      <obj_property name="ElementShortName">eos_out_0</obj_property>
+      <obj_property name="ObjectShortName">eos_out_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/ot_out_0" type="logic">
+      <obj_property name="ElementShortName">ot_out_0</obj_property>
+      <obj_property name="ObjectShortName">ot_out_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/reset_in_0" type="logic">
+      <obj_property name="ElementShortName">reset_in_0</obj_property>
+      <obj_property name="ObjectShortName">reset_in_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/s_drp_0_daddr" type="array">
+      <obj_property name="ElementShortName">s_drp_0_daddr[6:0]</obj_property>
+      <obj_property name="ObjectShortName">s_drp_0_daddr[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/s_drp_0_den" type="logic">
+      <obj_property name="ElementShortName">s_drp_0_den</obj_property>
+      <obj_property name="ObjectShortName">s_drp_0_den</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/s_drp_0_di" type="array">
+      <obj_property name="ElementShortName">s_drp_0_di[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_drp_0_di[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/s_drp_0_do" type="array">
+      <obj_property name="ElementShortName">s_drp_0_do[15:0]</obj_property>
+      <obj_property name="ObjectShortName">s_drp_0_do[15:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/s_drp_0_drdy" type="logic">
+      <obj_property name="ElementShortName">s_drp_0_drdy</obj_property>
+      <obj_property name="ObjectShortName">s_drp_0_drdy</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/s_drp_0_dwe" type="logic">
+      <obj_property name="ElementShortName">s_drp_0_dwe</obj_property>
+      <obj_property name="ObjectShortName">s_drp_0_dwe</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/user_temp_alarm_out_0" type="logic">
+      <obj_property name="ElementShortName">user_temp_alarm_out_0</obj_property>
+      <obj_property name="ObjectShortName">user_temp_alarm_out_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/vccaux_alarm_out_0" type="logic">
+      <obj_property name="ElementShortName">vccaux_alarm_out_0</obj_property>
+      <obj_property name="ObjectShortName">vccaux_alarm_out_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/vccint_alarm_out_0" type="logic">
+      <obj_property name="ElementShortName">vccint_alarm_out_0</obj_property>
+      <obj_property name="ObjectShortName">vccint_alarm_out_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/dclk_in_0" type="logic">
+      <obj_property name="ElementShortName">dclk_in_0</obj_property>
+      <obj_property name="ObjectShortName">dclk_in_0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/rd_en_fifo" type="logic">
+      <obj_property name="ElementShortName">rd_en_fifo</obj_property>
+      <obj_property name="ObjectShortName">rd_en_fifo</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/fifo_dout" type="array">
+      <obj_property name="ElementShortName">fifo_dout[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_dout[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/fifo_din" type="array">
+      <obj_property name="ElementShortName">fifo_din[11:0]</obj_property>
+      <obj_property name="ObjectShortName">fifo_din[11:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/wr_clk" type="logic">
+      <obj_property name="ElementShortName">wr_clk</obj_property>
+      <obj_property name="ObjectShortName">wr_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/clk_out" type="logic">
+      <obj_property name="ElementShortName">clk_out</obj_property>
+      <obj_property name="ObjectShortName">clk_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/locked" type="logic">
+      <obj_property name="ElementShortName">locked</obj_property>
+      <obj_property name="ObjectShortName">locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/wr_data_count_0" type="array">
+      <obj_property name="ElementShortName">wr_data_count_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data_count_0[7:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/prueba_xadc_tb/rd_data_count_0" type="array">
+      <obj_property name="ElementShortName">rd_data_count_0[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data_count_0[7:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

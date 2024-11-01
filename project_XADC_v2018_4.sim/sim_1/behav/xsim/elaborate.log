@@ -1,0 +1,43 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_6 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot prueba_xadc_tb_behav xil_defaultlib.prueba_xadc_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.Contador_26 [contador_26_default]
+Compiling architecture design_1_contador_26_0_0_arch of entity xil_defaultlib.design_1_Contador_26_0_0 [design_1_contador_26_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_52 [contador_52_default]
+Compiling architecture design_1_contador_52_0_0_arch of entity xil_defaultlib.design_1_Contador_52_0_0 [design_1_contador_52_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSM_FIFO_Entregable [fsm_fifo_entregable_default]
+Compiling architecture design_1_fsm_fifo_entregable_0_2_arch of entity xil_defaultlib.design_1_FSM_FIFO_Entregable_0_2 [design_1_fsm_fifo_entregable_0_2...]
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=27.62...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_sync_stag...
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_bhv_ver_a...
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_CONV_VER(...
+Compiling module fifo_generator_v13_2_6.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.design_1_fifo_generator_0_0
+Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000000011"...]
+Compiling architecture xilinx of entity xil_defaultlib.design_1_xadc_wiz_0_0 [design_1_xadc_wiz_0_0_default]
+Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.prueba_xadc_tb
+Built simulation snapshot prueba_xadc_tb_behav
