@@ -1,0 +1,7 @@
+verilog xil_defaultlib --include "../../../../project_XADC_v2018_4.gen/sources_1/bd/CLOCKS/ipshared/62b6" \
+"../../../bd/CLOCKS/ip/CLOCKS_clk_wiz_0_0/CLOCKS_clk_wiz_0_0_clk_wiz.v" \
+"../../../bd/CLOCKS/ip/CLOCKS_clk_wiz_0_0/CLOCKS_clk_wiz_0_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

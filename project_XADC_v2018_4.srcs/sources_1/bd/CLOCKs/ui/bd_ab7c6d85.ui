@@ -19,7 +19,7 @@ preplace netloc clk_wiz_0_clk_576MHz 1 1 1 390J -110n
 preplace netloc clk_wiz_0_locked 1 1 1 400J -110n
 preplace netloc reset_0_1 1 0 1 NJ -90
 levelinfo -pg 1 0 290 430
-pagesize -pg 1 -db -bbox -sgen -140 -170 560 140
+pagesize -pg 1 -db -bbox -sgen -140 -170 550 140
 "
 }
 0

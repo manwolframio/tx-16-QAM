@@ -1,3 +1,5 @@
 Time resolution is 1 ps
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+Warning: WARNING : aresetn must be asserted or deasserted for a minimum of 2 cycles
+Time: 2500 ns  Iteration: 2  Process: /prueba_DDS_tb/dut/DDS_MULT_ADDER_i/dds_compiler_0/U0/i_synth/has_aresetn/check_reset  File: C:/Xilinx/Vivado/2021.2/data/ip/xilinx/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd
+Warning: WARNING : aresetn must be asserted or deasserted for a minimum of 2 cycles
+Time: 2500 ns  Iteration: 2  Process: /prueba_DDS_tb/dut/DDS_MULT_ADDER_i/dds_compiler_0/U0/i_synth/has_aresetn/check_reset  File: C:/Xilinx/Vivado/2021.2/data/ip/xilinx/dds_compiler_v6_0/hdl/dds_compiler_v6_0_vh_rfs.vhd

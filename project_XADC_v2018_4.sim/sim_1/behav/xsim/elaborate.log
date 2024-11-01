@@ -1,9 +1,8 @@
 Vivado Simulator v2021.2
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L fifo_generator_v13_2_6 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot prueba_xadc_tb_behav xil_defaultlib.prueba_xadc_tb xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_17 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_21 -L secureip -L xpm --snapshot prueba_DDS_tb_behav xil_defaultlib.prueba_DDS_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
-Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -13,27 +12,41 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package unisim.vcomponents
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_21.dds_compiler_v6_0_21_viv_comp
 Compiling package ieee.std_logic_arith
 Compiling package ieee.std_logic_signed
-Compiling package ieee.vital_timing
-Compiling package ieee.vital_primitives
-Compiling package unisim.vpkg
-Compiling package vl.vl_types
-Compiling module xil_defaultlib.glbl
-Compiling architecture behavioral of entity xil_defaultlib.Contador_26 [contador_26_default]
-Compiling architecture xadc_fifo_contador_26_0_1_arch of entity xil_defaultlib.XADC_FIFO_Contador_26_0_1 [xadc_fifo_contador_26_0_1_defaul...]
-Compiling architecture behavioral of entity xil_defaultlib.Contador_52 [contador_52_default]
-Compiling architecture xadc_fifo_contador_52_0_1_arch of entity xil_defaultlib.XADC_FIFO_Contador_52_0_1 [xadc_fifo_contador_52_0_1_defaul...]
-Compiling architecture behavioral of entity xil_defaultlib.FSM_FIFO_Entregable [fsm_fifo_entregable_default]
-Compiling architecture xadc_fifo_fsm_fifo_entregable_0_1_arch of entity xil_defaultlib.XADC_FIFO_FSM_FIFO_Entregable_0_1 [xadc_fifo_fsm_fifo_entregable_0_...]
-Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_sync_stag...
-Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_bhv_ver_a...
-Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_CONV_VER(...
-Compiling module fifo_generator_v13_2_6.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.XADC_FIFO_fifo_generator_0_1
-Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000000011"...]
-Compiling architecture xilinx of entity xil_defaultlib.XADC_FIFO_xadc_wiz_0_1 [xadc_fifo_xadc_wiz_0_1_default]
-Compiling architecture structure of entity xil_defaultlib.XADC_FIFO [xadc_fifo_default]
-Compiling architecture structure of entity xil_defaultlib.XADC_FIFO_wrapper [xadc_fifo_wrapper_default]
-Compiling architecture behavioral of entity xil_defaultlib.prueba_xadc_tb
-Built simulation snapshot prueba_xadc_tb_behav
+Compiling package dds_compiler_v6_0_21.pkg_dds_compiler_v6_0_21
+Compiling package dds_compiler_v6_0_21.dds_compiler_v6_0_21_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package ieee.std_logic_unsigned
+Compiling package dds_compiler_v6_0_21.pkg_betas
+Compiling package dds_compiler_v6_0_21.pkg_alphas
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_rdy [\dds_compiler_v6_0_21_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.pipe_add [\pipe_add(c_width=24,c_num_segs=...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.accum [\accum(c_xdevicefamily="virtex7"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.sin_cos [\sin_cos(c_addr_width=8,c_data_w...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_core [\dds_compiler_v6_0_21_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_viv [\dds_compiler_v6_0_21_viv(c_accu...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21 [\dds_compiler_v6_0_21(c_accumula...]
+Compiling architecture dds_mult_adder_dds_compiler_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_dds_compiler_0_0 [dds_mult_adder_dds_compiler_0_0_...]
+Compiling architecture structure of entity xil_defaultlib.DDS_MULT_ADDER [dds_mult_adder_default]
+Compiling architecture structure of entity xil_defaultlib.DDS_MULT_ADDER_wrapper [dds_mult_adder_wrapper_default]
+Compiling architecture tb of entity xil_defaultlib.prueba_dds_tb
+Built simulation snapshot prueba_DDS_tb_behav

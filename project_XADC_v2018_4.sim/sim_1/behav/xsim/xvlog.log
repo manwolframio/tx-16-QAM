@@ -1,4 +1,8 @@
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_fifo_generator_0_1/sim/XADC_FIFO_fifo_generator_0_1.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module XADC_FIFO_fifo_generator_0_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/CLOCKS/ip/CLOCKS_clk_wiz_0_0/CLOCKS_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLOCKS_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/CLOCKS/ip/CLOCKS_clk_wiz_0_0/CLOCKS_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLOCKS_clk_wiz_0_0
 INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl

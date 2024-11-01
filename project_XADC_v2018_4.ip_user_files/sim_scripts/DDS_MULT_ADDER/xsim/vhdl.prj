@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_dds_compiler_0_0/sim/DDS_MULT_ADDER_dds_compiler_0_0.vhd" \
+"../../../bd/DDS_MULT_ADDER/sim/DDS_MULT_ADDER.vhd" \
+
+nosort

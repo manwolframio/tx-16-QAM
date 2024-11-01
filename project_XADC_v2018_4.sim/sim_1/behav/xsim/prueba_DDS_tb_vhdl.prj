@@ -1,0 +1,9 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_dds_compiler_0_0/sim/DDS_MULT_ADDER_dds_compiler_0_0.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER/sim/DDS_MULT_ADDER.vhd" \
+"../../../../project_XADC_v2018_4.gen/sources_1/bd/DDS_MULT_ADDER/hdl/DDS_MULT_ADDER_wrapper.vhd" \
+"../../../../project_XADC_v2018_4.srcs/sim_1/new/prueba_DDS_tb.vhd" \
+
+# Do not sort compile order
+nosort

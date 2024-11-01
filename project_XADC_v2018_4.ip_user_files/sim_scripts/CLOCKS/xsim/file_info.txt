@@ -1,0 +1,4 @@
+CLOCKS_clk_wiz_0_0_clk_wiz.v,verilog,xil_defaultlib,../../../bd/CLOCKS/ip/CLOCKS_clk_wiz_0_0/CLOCKS_clk_wiz_0_0_clk_wiz.v,incdir="$ref_dir/../../../../project_XADC_v2018_4.gen/sources_1/bd/CLOCKS/ipshared/62b6"incdir="../../../../project_XADC_v2018_4.gen/sources_1/bd/CLOCKS/ipshared/62b6"
+CLOCKS_clk_wiz_0_0.v,verilog,xil_defaultlib,../../../bd/CLOCKS/ip/CLOCKS_clk_wiz_0_0/CLOCKS_clk_wiz_0_0.v,incdir="$ref_dir/../../../../project_XADC_v2018_4.gen/sources_1/bd/CLOCKS/ipshared/62b6"incdir="../../../../project_XADC_v2018_4.gen/sources_1/bd/CLOCKS/ipshared/62b6"
+CLOCKS.vhd,vhdl,xil_defaultlib,../../../bd/CLOCKS/sim/CLOCKS.vhd,incdir="$ref_dir/../../../../project_XADC_v2018_4.gen/sources_1/bd/CLOCKS/ipshared/62b6"incdir="../../../../project_XADC_v2018_4.gen/sources_1/bd/CLOCKS/ipshared/62b6"
+glbl.v,Verilog,xil_defaultlib,glbl.v

@@ -1,0 +1,365 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x8B117DCDD675850",
+      "device": "xc7vx485tffg1157-1",
+      "gen_directory": "../../../../project_XADC_v2018_4.gen/sources_1/bd/DDS_MULT_ADDER",
+      "name": "DDS_MULT_ADDER",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2"
+    },
+    "design_tree": {
+      "dds_compiler_0": "",
+      "QAM_mapper_0": "",
+      "Q_RRC": "",
+      "I_RRC": "",
+      "DDS_splitter": "",
+      "Q_mult": "",
+      "I_mult": "",
+      "c_addsub_0": ""
+    },
+    "interface_ports": {
+      "M_AXIS_DATA_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+      },
+      "M_AXIS_PHASE_0": {
+        "mode": "Master",
+        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
+        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+      }
+    },
+    "ports": {
+      "clk_192MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "aresetn"
+          }
+        }
+      },
+      "aresetn": {
+        "type": "rst",
+        "direction": "I"
+      },
+      "clk_576MHz": {
+        "type": "clk",
+        "direction": "I"
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "data_in": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      },
+      "din_valid": {
+        "direction": "I"
+      }
+    },
+    "components": {
+      "dds_compiler_0": {
+        "vlnv": "xilinx.com:ip:dds_compiler:6.0",
+        "xci_name": "DDS_MULT_ADDER_dds_compiler_0_0",
+        "xci_path": "ip\\DDS_MULT_ADDER_dds_compiler_0_0\\DDS_MULT_ADDER_dds_compiler_0_0.xci",
+        "inst_hier_path": "dds_compiler_0",
+        "parameters": {
+          "Channels": {
+            "value": "1"
+          },
+          "DATA_Has_TLAST": {
+            "value": "Not_Required"
+          },
+          "DDS_Clock_Rate": {
+            "value": "576"
+          },
+          "Frequency_Resolution": {
+            "value": "0.4"
+          },
+          "Has_ARESETn": {
+            "value": "true"
+          },
+          "Has_Phase_Out": {
+            "value": "true"
+          },
+          "Latency": {
+            "value": "4"
+          },
+          "M_DATA_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "M_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          },
+          "Noise_Shaping": {
+            "value": "None"
+          },
+          "Output_Frequency1": {
+            "value": "0"
+          },
+          "Output_Width": {
+            "value": "8"
+          },
+          "PINC1": {
+            "value": "001011000111000111000111"
+          },
+          "Parameter_Entry": {
+            "value": "Hardware_Parameters"
+          },
+          "PartsPresent": {
+            "value": "Phase_Generator_and_SIN_COS_LUT"
+          },
+          "Phase_Increment": {
+            "value": "Fixed"
+          },
+          "Phase_Width": {
+            "value": "24"
+          },
+          "S_PHASE_Has_TUSER": {
+            "value": "Not_Required"
+          }
+        }
+      },
+      "QAM_mapper_0": {
+        "vlnv": "xilinx.com:module_ref:QAM_mapper:1.0",
+        "xci_name": "DDS_MULT_ADDER_QAM_mapper_0_0",
+        "xci_path": "ip\\DDS_MULT_ADDER_QAM_mapper_0_0\\DDS_MULT_ADDER_QAM_mapper_0_0.xci",
+        "inst_hier_path": "QAM_mapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "QAM_mapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "din_valid": {
+            "direction": "I"
+          },
+          "data_out_i": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "data_out_q": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "dout_valid": {
+            "direction": "O"
+          }
+        }
+      },
+      "Q_RRC": {
+        "vlnv": "xilinx.com:ip:fir_compiler:7.2",
+        "xci_name": "DDS_MULT_ADDER_fir_compiler_0_0",
+        "xci_path": "ip\\DDS_MULT_ADDER_fir_compiler_0_0\\DDS_MULT_ADDER_fir_compiler_0_0.xci",
+        "inst_hier_path": "Q_RRC"
+      },
+      "I_RRC": {
+        "vlnv": "xilinx.com:ip:fir_compiler:7.2",
+        "xci_name": "DDS_MULT_ADDER_fir_compiler_0_1",
+        "xci_path": "ip\\DDS_MULT_ADDER_fir_compiler_0_1\\DDS_MULT_ADDER_fir_compiler_0_1.xci",
+        "inst_hier_path": "I_RRC"
+      },
+      "DDS_splitter": {
+        "vlnv": "xilinx.com:module_ref:DDS_splitter:1.0",
+        "xci_name": "DDS_MULT_ADDER_DDS_splitter_0_0",
+        "xci_path": "ip\\DDS_MULT_ADDER_DDS_splitter_0_0\\DDS_MULT_ADDER_DDS_splitter_0_0.xci",
+        "inst_hier_path": "DDS_splitter",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "DDS_splitter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "data_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "high_byte": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "low_byte": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "Q_mult": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "xci_name": "DDS_MULT_ADDER_mult_gen_0_0",
+        "xci_path": "ip\\DDS_MULT_ADDER_mult_gen_0_0\\DDS_MULT_ADDER_mult_gen_0_0.xci",
+        "inst_hier_path": "Q_mult"
+      },
+      "I_mult": {
+        "vlnv": "xilinx.com:ip:mult_gen:12.0",
+        "xci_name": "DDS_MULT_ADDER_mult_gen_0_1",
+        "xci_path": "ip\\DDS_MULT_ADDER_mult_gen_0_1\\DDS_MULT_ADDER_mult_gen_0_1.xci",
+        "inst_hier_path": "I_mult"
+      },
+      "c_addsub_0": {
+        "vlnv": "xilinx.com:ip:c_addsub:12.0",
+        "xci_name": "DDS_MULT_ADDER_c_addsub_0_0",
+        "xci_path": "ip\\DDS_MULT_ADDER_c_addsub_0_0\\DDS_MULT_ADDER_c_addsub_0_0.xci",
+        "inst_hier_path": "c_addsub_0"
+      }
+    },
+    "interface_nets": {
+      "dds_compiler_0_M_AXIS_DATA": {
+        "interface_ports": [
+          "M_AXIS_DATA_0",
+          "dds_compiler_0/M_AXIS_DATA"
+        ]
+      },
+      "dds_compiler_0_M_AXIS_PHASE": {
+        "interface_ports": [
+          "M_AXIS_PHASE_0",
+          "dds_compiler_0/M_AXIS_PHASE"
+        ]
+      }
+    },
+    "nets": {
+      "DDS_splitter_high_byte": {
+        "ports": [
+          "DDS_splitter/high_byte",
+          "Q_mult/B"
+        ]
+      },
+      "DDS_splitter_low_byte": {
+        "ports": [
+          "DDS_splitter/low_byte",
+          "I_mult/B"
+        ]
+      },
+      "I_RRC_m_axis_data_tdata": {
+        "ports": [
+          "I_RRC/m_axis_data_tdata",
+          "I_mult/A"
+        ]
+      },
+      "I_mult_P": {
+        "ports": [
+          "I_mult/P",
+          "c_addsub_0/B"
+        ]
+      },
+      "Net": {
+        "ports": [
+          "I_mult/CLK",
+          "Q_mult/CLK",
+          "c_addsub_0/CLK"
+        ]
+      },
+      "Net1": {
+        "ports": [
+          "I_RRC/aclk",
+          "Q_RRC/aclk"
+        ]
+      },
+      "QAM_mapper_0_data_out_i": {
+        "ports": [
+          "QAM_mapper_0/data_out_i",
+          "I_RRC/s_axis_data_tdata"
+        ]
+      },
+      "QAM_mapper_0_data_out_q": {
+        "ports": [
+          "QAM_mapper_0/data_out_q",
+          "Q_RRC/s_axis_data_tdata"
+        ]
+      },
+      "Q_RRC_m_axis_data_tdata": {
+        "ports": [
+          "Q_RRC/m_axis_data_tdata",
+          "Q_mult/A"
+        ]
+      },
+      "Q_mult_P": {
+        "ports": [
+          "Q_mult/P",
+          "c_addsub_0/A"
+        ]
+      },
+      "aclk_0_1": {
+        "ports": [
+          "clk_192MHz",
+          "dds_compiler_0/aclk"
+        ]
+      },
+      "aresetn_0_1": {
+        "ports": [
+          "aresetn",
+          "dds_compiler_0/aresetn"
+        ]
+      },
+      "clk_0_1": {
+        "ports": [
+          "clk_576MHz",
+          "QAM_mapper_0/clk"
+        ]
+      },
+      "data_in_0_1": {
+        "ports": [
+          "data_in",
+          "QAM_mapper_0/data_in"
+        ]
+      },
+      "dds_compiler_0_m_axis_data_tdata": {
+        "ports": [
+          "dds_compiler_0/m_axis_data_tdata",
+          "DDS_splitter/data_in"
+        ]
+      },
+      "din_valid_0_1": {
+        "ports": [
+          "din_valid",
+          "QAM_mapper_0/din_valid"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst",
+          "QAM_mapper_0/rst"
+        ]
+      }
+    }
+  }
+}

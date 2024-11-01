@@ -1,0 +1,4 @@
+vhdl xil_defaultlib  \
+"../../../bd/CLOCKS/sim/CLOCKS.vhd" \
+
+nosort
