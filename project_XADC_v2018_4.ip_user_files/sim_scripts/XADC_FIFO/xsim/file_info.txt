@@ -1,0 +1,12 @@
+design_1_xadc_wiz_0_0.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/ip/XADC_FIFO_Contador_26_0_1/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd,
+Contador_26.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/ipshared/cbd3/src/Contador_26.vhd,
+XADC_FIFO_Contador_26_0_1.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/ip/XADC_FIFO_Contador_26_0_1/sim/XADC_FIFO_Contador_26_0_1.vhd,
+Contador_52.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/ipshared/db9d/src/Contador_52.vhd,
+XADC_FIFO_Contador_52_0_1.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/ip/XADC_FIFO_Contador_52_0_1/sim/XADC_FIFO_Contador_52_0_1.vhd,
+design_1_xadc_wiz_0_0.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/ip/XADC_FIFO_FSM_FIFO_Entregable_0_1/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd,
+FSM_FIFO_Entregable.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/ipshared/0ffb/src/FSM_FIFO_Entregable.vhd,
+XADC_FIFO_FSM_FIFO_Entregable_0_1.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/ip/XADC_FIFO_FSM_FIFO_Entregable_0_1/sim/XADC_FIFO_FSM_FIFO_Entregable_0_1.vhd,
+XADC_FIFO_fifo_generator_0_1.v,verilog,xil_defaultlib,../../../bd/XADC_FIFO/ip/XADC_FIFO_fifo_generator_0_1/sim/XADC_FIFO_fifo_generator_0_1.v,
+XADC_FIFO_xadc_wiz_0_1.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/ip/XADC_FIFO_xadc_wiz_0_1/XADC_FIFO_xadc_wiz_0_1.vhd,
+XADC_FIFO.vhd,vhdl,xil_defaultlib,../../../bd/XADC_FIFO/sim/XADC_FIFO.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

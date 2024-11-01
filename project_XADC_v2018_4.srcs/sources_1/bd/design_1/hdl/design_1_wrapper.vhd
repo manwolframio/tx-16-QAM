@@ -1,8 +1,8 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
---Date        : Wed Oct 16 11:49:21 2024
---Host        : DESKTOP-OD4OU2T running 64-bit major release  (build 9200)
+--Date        : Fri Nov  1 17:57:25 2024
+--Host        : Vivobook-manso running 64-bit major release  (build 9200)
 --Command     : generate_target design_1_wrapper.bd
 --Design      : design_1_wrapper
 --Purpose     : IP block netlist
@@ -18,14 +18,15 @@ entity design_1_wrapper is
     alarm_out_0 : out STD_LOGIC;
     busy_out_0 : out STD_LOGIC;
     channel_out_0 : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    clk_52MHz : in STD_LOGIC;
     clk_out : out STD_LOGIC;
-    dclk_in_0 : in STD_LOGIC;
     eoc_out_0 : out STD_LOGIC;
     eos_out_0 : out STD_LOGIC;
     fifo_din : in STD_LOGIC_VECTOR ( 11 downto 0 );
     fifo_dout : out STD_LOGIC_VECTOR ( 11 downto 0 );
     fifo_full : out STD_LOGIC;
     locked : out STD_LOGIC;
+    locked_clk : in STD_LOGIC;
     ot_out_0 : out STD_LOGIC;
     rd_data_count_0 : out STD_LOGIC_VECTOR ( 7 downto 0 );
     rd_en_fifo : out STD_LOGIC;
@@ -51,7 +52,6 @@ architecture STRUCTURE of design_1_wrapper is
     alarm_out_0 : out STD_LOGIC;
     busy_out_0 : out STD_LOGIC;
     channel_out_0 : out STD_LOGIC_VECTOR ( 4 downto 0 );
-    dclk_in_0 : in STD_LOGIC;
     eoc_out_0 : out STD_LOGIC;
     eos_out_0 : out STD_LOGIC;
     ot_out_0 : out STD_LOGIC;
@@ -76,7 +76,9 @@ architecture STRUCTURE of design_1_wrapper is
     s_drp_0_di : in STD_LOGIC_VECTOR ( 15 downto 0 );
     s_drp_0_do : out STD_LOGIC_VECTOR ( 15 downto 0 );
     s_drp_0_drdy : out STD_LOGIC;
-    s_drp_0_dwe : in STD_LOGIC
+    s_drp_0_dwe : in STD_LOGIC;
+    clk_52MHz : in STD_LOGIC;
+    locked_clk : in STD_LOGIC
   );
   end component design_1;
 begin
@@ -87,14 +89,15 @@ design_1_i: component design_1
       alarm_out_0 => alarm_out_0,
       busy_out_0 => busy_out_0,
       channel_out_0(4 downto 0) => channel_out_0(4 downto 0),
+      clk_52MHz => clk_52MHz,
       clk_out => clk_out,
-      dclk_in_0 => dclk_in_0,
       eoc_out_0 => eoc_out_0,
       eos_out_0 => eos_out_0,
       fifo_din(11 downto 0) => fifo_din(11 downto 0),
       fifo_dout(11 downto 0) => fifo_dout(11 downto 0),
       fifo_full => fifo_full,
       locked => locked,
+      locked_clk => locked_clk,
       ot_out_0 => ot_out_0,
       rd_data_count_0(7 downto 0) => rd_data_count_0(7 downto 0),
       rd_en_fifo => rd_en_fifo,

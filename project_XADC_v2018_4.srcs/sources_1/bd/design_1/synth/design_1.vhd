@@ -1,8 +1,8 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
---Date        : Wed Oct 16 11:49:21 2024
---Host        : DESKTOP-OD4OU2T running 64-bit major release  (build 9200)
+--Date        : Fri Nov  1 17:57:25 2024
+--Host        : Vivobook-manso running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
 --Purpose     : IP block netlist
@@ -18,14 +18,15 @@ entity design_1 is
     alarm_out_0 : out STD_LOGIC;
     busy_out_0 : out STD_LOGIC;
     channel_out_0 : out STD_LOGIC_VECTOR ( 4 downto 0 );
+    clk_52MHz : in STD_LOGIC;
     clk_out : out STD_LOGIC;
-    dclk_in_0 : in STD_LOGIC;
     eoc_out_0 : out STD_LOGIC;
     eos_out_0 : out STD_LOGIC;
     fifo_din : in STD_LOGIC_VECTOR ( 11 downto 0 );
     fifo_dout : out STD_LOGIC_VECTOR ( 11 downto 0 );
     fifo_full : out STD_LOGIC;
     locked : out STD_LOGIC;
+    locked_clk : in STD_LOGIC;
     ot_out_0 : out STD_LOGIC;
     rd_data_count_0 : out STD_LOGIC_VECTOR ( 7 downto 0 );
     rd_en_fifo : out STD_LOGIC;
@@ -44,7 +45,7 @@ entity design_1 is
     wr_rst_busy_0 : out STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=6,numReposBlks=6,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=5,numReposBlks=5,numNonXlnxBlks=0,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -105,14 +106,6 @@ architecture STRUCTURE of design_1 is
     wr_clk : out STD_LOGIC
   );
   end component design_1_Contador_52_0_0;
-  component design_1_clk_wiz_0_0 is
-  port (
-    reset : in STD_LOGIC;
-    clk_in1 : in STD_LOGIC;
-    clk_out1 : out STD_LOGIC;
-    locked : out STD_LOGIC
-  );
-  end component design_1_clk_wiz_0_0;
   component design_1_FSM_FIFO_Entregable_0_2 is
   port (
     rd_clk_fifo : in STD_LOGIC;
@@ -132,7 +125,6 @@ architecture STRUCTURE of design_1 is
   signal Vp_Vn_0_1_V_P : STD_LOGIC;
   signal clk_wiz_0_clk_out1 : STD_LOGIC;
   signal clk_wiz_0_locked : STD_LOGIC;
-  signal dclk_in_0_1 : STD_LOGIC;
   signal fifo_din_1 : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal fifo_generator_0_dout : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal fifo_generator_0_empty : STD_LOGIC;
@@ -161,10 +153,8 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO : string;
   attribute X_INTERFACE_INFO of Vp_Vn_0_v_n : signal is "xilinx.com:interface:diff_analog_io:1.0 Vp_Vn_0 V_N";
   attribute X_INTERFACE_INFO of Vp_Vn_0_v_p : signal is "xilinx.com:interface:diff_analog_io:1.0 Vp_Vn_0 V_P";
-  attribute X_INTERFACE_INFO of dclk_in_0 : signal is "xilinx.com:signal:clock:1.0 CLK.DCLK_IN_0 CLK";
-  attribute X_INTERFACE_PARAMETER : string;
-  attribute X_INTERFACE_PARAMETER of dclk_in_0 : signal is "XIL_INTERFACENAME CLK.DCLK_IN_0, CLK_DOMAIN design_1_dclk_in_0, FREQ_HZ 36000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.000";
   attribute X_INTERFACE_INFO of reset_in_0 : signal is "xilinx.com:signal:reset:1.0 RST.RESET_IN_0 RST";
+  attribute X_INTERFACE_PARAMETER : string;
   attribute X_INTERFACE_PARAMETER of reset_in_0 : signal is "XIL_INTERFACENAME RST.RESET_IN_0, INSERT_VIP 0, POLARITY ACTIVE_HIGH";
   attribute X_INTERFACE_INFO of s_drp_0_den : signal is "xilinx.com:interface:drp:1.0 s_drp_0 DEN";
   attribute X_INTERFACE_INFO of s_drp_0_drdy : signal is "xilinx.com:interface:drp:1.0 s_drp_0 DRDY";
@@ -179,7 +169,8 @@ begin
   busy_out_0 <= xadc_wiz_0_busy_out;
   channel_out_0(4 downto 0) <= xadc_wiz_0_channel_out(4 downto 0);
   clk_out <= clk_wiz_0_clk_out1;
-  dclk_in_0_1 <= dclk_in_0;
+  clk_wiz_0_clk_out1 <= clk_52MHz;
+  clk_wiz_0_locked <= locked_clk;
   eoc_out_0 <= xadc_wiz_0_eoc_out;
   eos_out_0 <= xadc_wiz_0_eos_out;
   fifo_din_1(11 downto 0) <= fifo_din(11 downto 0);
@@ -224,13 +215,6 @@ FSM_FIFO_Entregable_0: component design_1_FSM_FIFO_Entregable_0_2
       rd_en_fifo => FSM_FIFO_Entregable_0_rd_en_fifo,
       rd_rst_busy => fifo_generator_0_rd_rst_busy,
       rst_fifo => reset_in_0_1
-    );
-clk_wiz_0: component design_1_clk_wiz_0_0
-     port map (
-      clk_in1 => dclk_in_0_1,
-      clk_out1 => clk_wiz_0_clk_out1,
-      locked => clk_wiz_0_locked,
-      reset => reset_in_0_1
     );
 fifo_generator_0: component design_1_fifo_generator_0_0
      port map (

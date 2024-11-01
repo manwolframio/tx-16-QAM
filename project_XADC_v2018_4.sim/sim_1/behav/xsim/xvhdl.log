@@ -1,2 +1,25 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.srcs/sim_1/new/prueba_xadc_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_Contador_26_0_1/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xadc_wiz_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ipshared/cbd3/src/Contador_26.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contador_26'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_Contador_26_0_1/sim/XADC_FIFO_Contador_26_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_Contador_26_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ipshared/db9d/src/Contador_52.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contador_52'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_Contador_52_0_1/sim/XADC_FIFO_Contador_52_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_Contador_52_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_FSM_FIFO_Entregable_0_1/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xadc_wiz_0_0'
+WARNING: [VRFC 10-3608] overwriting existing secondary unit 'xilinx' [C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_FSM_FIFO_Entregable_0_1/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd:80]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ipshared/0ffb/src/FSM_FIFO_Entregable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_FIFO_Entregable'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_FSM_FIFO_Entregable_0_1/sim/XADC_FIFO_FSM_FIFO_Entregable_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_FSM_FIFO_Entregable_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_xadc_wiz_0_1/XADC_FIFO_xadc_wiz_0_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_xadc_wiz_0_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/sim/XADC_FIFO.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/XADC_FIFO/hdl/XADC_FIFO_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sim_1/new/prueba_xadc_tb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'prueba_xadc_tb'

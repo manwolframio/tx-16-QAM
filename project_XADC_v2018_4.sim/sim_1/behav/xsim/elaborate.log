@@ -21,23 +21,19 @@ Compiling package unisim.vpkg
 Compiling package vl.vl_types
 Compiling module xil_defaultlib.glbl
 Compiling architecture behavioral of entity xil_defaultlib.Contador_26 [contador_26_default]
-Compiling architecture design_1_contador_26_0_0_arch of entity xil_defaultlib.design_1_Contador_26_0_0 [design_1_contador_26_0_0_default]
+Compiling architecture xadc_fifo_contador_26_0_1_arch of entity xil_defaultlib.XADC_FIFO_Contador_26_0_1 [xadc_fifo_contador_26_0_1_defaul...]
 Compiling architecture behavioral of entity xil_defaultlib.Contador_52 [contador_52_default]
-Compiling architecture design_1_contador_52_0_0_arch of entity xil_defaultlib.design_1_Contador_52_0_0 [design_1_contador_52_0_0_default]
+Compiling architecture xadc_fifo_contador_52_0_1_arch of entity xil_defaultlib.XADC_FIFO_Contador_52_0_1 [xadc_fifo_contador_52_0_1_defaul...]
 Compiling architecture behavioral of entity xil_defaultlib.FSM_FIFO_Entregable [fsm_fifo_entregable_default]
-Compiling architecture design_1_fsm_fifo_entregable_0_2_arch of entity xil_defaultlib.design_1_FSM_FIFO_Entregable_0_2 [design_1_fsm_fifo_entregable_0_2...]
-Compiling module unisims_ver.IBUF
-Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=27.62...
-Compiling module unisims_ver.BUFG
-Compiling module xil_defaultlib.design_1_clk_wiz_0_0_clk_wiz
-Compiling module xil_defaultlib.design_1_clk_wiz_0_0
+Compiling architecture xadc_fifo_fsm_fifo_entregable_0_1_arch of entity xil_defaultlib.XADC_FIFO_FSM_FIFO_Entregable_0_1 [xadc_fifo_fsm_fifo_entregable_0_...]
 Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_sync_stag...
 Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_bhv_ver_a...
 Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_CONV_VER(...
 Compiling module fifo_generator_v13_2_6.fifo_generator_vlog_beh(C_DATA_C...
-Compiling module xil_defaultlib.design_1_fifo_generator_0_0
+Compiling module xil_defaultlib.XADC_FIFO_fifo_generator_0_1
 Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000000011"...]
-Compiling architecture xilinx of entity xil_defaultlib.design_1_xadc_wiz_0_0 [design_1_xadc_wiz_0_0_default]
-Compiling architecture structure of entity xil_defaultlib.design_1 [design_1_default]
+Compiling architecture xilinx of entity xil_defaultlib.XADC_FIFO_xadc_wiz_0_1 [xadc_fifo_xadc_wiz_0_1_default]
+Compiling architecture structure of entity xil_defaultlib.XADC_FIFO [xadc_fifo_default]
+Compiling architecture structure of entity xil_defaultlib.XADC_FIFO_wrapper [xadc_fifo_wrapper_default]
 Compiling architecture behavioral of entity xil_defaultlib.prueba_xadc_tb
 Built simulation snapshot prueba_xadc_tb_behav

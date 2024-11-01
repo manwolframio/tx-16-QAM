@@ -1,14 +1,16 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" \
-"../../../../project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_Contador_26_0_0/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" \
-"../../../../project_XADC_v2018_4.ip_user_files/bd/design_1/ipshared/cbd3/src/Contador_26.vhd" \
-"../../../../project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_Contador_26_0_0/sim/design_1_Contador_26_0_0.vhd" \
-"../../../../project_XADC_v2018_4.ip_user_files/bd/design_1/ipshared/db9d/src/Contador_52.vhd" \
-"../../../../project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_Contador_52_0_0/sim/design_1_Contador_52_0_0.vhd" \
-"../../../../project_XADC_v2018_4.ip_user_files/bd/design_1/sim/design_1.vhd" \
-"../../../../project_XADC_v2018_4.ip_user_files/bd/design_1/ipshared/0ffb/src/FSM_FIFO_Entregable.vhd" \
-"../../../../project_XADC_v2018_4.ip_user_files/bd/design_1/ip/design_1_FSM_FIFO_Entregable_0_2/sim/design_1_FSM_FIFO_Entregable_0_2.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_Contador_26_0_1/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ipshared/cbd3/src/Contador_26.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_Contador_26_0_1/sim/XADC_FIFO_Contador_26_0_1.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ipshared/db9d/src/Contador_52.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_Contador_52_0_1/sim/XADC_FIFO_Contador_52_0_1.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_FSM_FIFO_Entregable_0_1/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ipshared/0ffb/src/FSM_FIFO_Entregable.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_FSM_FIFO_Entregable_0_1/sim/XADC_FIFO_FSM_FIFO_Entregable_0_1.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/ip/XADC_FIFO_xadc_wiz_0_1/XADC_FIFO_xadc_wiz_0_1.vhd" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO/sim/XADC_FIFO.vhd" \
+"../../../../project_XADC_v2018_4.gen/sources_1/bd/XADC_FIFO/hdl/XADC_FIFO_wrapper.vhd" \
 "../../../../project_XADC_v2018_4.srcs/sim_1/new/prueba_xadc_tb.vhd" \
 
 # Do not sort compile order

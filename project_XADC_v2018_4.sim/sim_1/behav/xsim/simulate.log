@@ -1,5 +1,3 @@
 Time resolution is 1 ps
 WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
-Failure: Fin simulacion
-Time: 3086974581 ps  Iteration: 1  Process: /prueba_xadc_tb/stimulus  File: C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.srcs/sim_1/new/prueba_xadc_tb.vhd
-$finish called at time : 3086974581 ps : File "C:/Users/albad/LaboratorioD/XADC_FIFO_Entregable/project_XADC_v2018_4.srcs/sim_1/new/prueba_xadc_tb.vhd" Line 184
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.

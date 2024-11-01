@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"XADC_FIFO": {
+			"proto_instances": {
+			}
+		}
+	}
+}
