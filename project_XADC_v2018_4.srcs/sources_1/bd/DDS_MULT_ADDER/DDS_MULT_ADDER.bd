@@ -1,35 +1,24 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x8B117DCDD675850",
+      "boundary_crc": "0x2BCF7D42CB790662",
       "device": "xc7vx485tffg1157-1",
       "gen_directory": "../../../../project_XADC_v2018_4.gen/sources_1/bd/DDS_MULT_ADDER",
       "name": "DDS_MULT_ADDER",
       "rev_ctrl_bd_flag": "RevCtrlBdOff",
       "synth_flow_mode": "Hierarchical",
-      "tool_version": "2021.2"
+      "tool_version": "2021.2",
+      "validated": "true"
     },
     "design_tree": {
       "dds_compiler_0": "",
-      "QAM_mapper_0": "",
       "Q_RRC": "",
       "I_RRC": "",
       "DDS_splitter": "",
       "Q_mult": "",
       "I_mult": "",
-      "c_addsub_0": ""
-    },
-    "interface_ports": {
-      "M_AXIS_DATA_0": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-      },
-      "M_AXIS_PHASE_0": {
-        "mode": "Master",
-        "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
-        "vlnv": "xilinx.com:interface:axis_rtl:1.0"
-      }
+      "c_addsub_0": "",
+      "QAM_mapper_0": ""
     },
     "ports": {
       "clk_192MHz": {
@@ -37,22 +26,82 @@
         "direction": "I",
         "parameters": {
           "ASSOCIATED_RESET": {
-            "value": "aresetn"
+            "value": "aresetn:rst"
+          },
+          "CLK_DOMAIN": {
+            "value": "DDS_MULT_ADDER_clk_192MHz",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
           }
         }
       },
       "aresetn": {
         "type": "rst",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_LOW",
+            "value_src": "default"
+          }
+        }
       },
       "clk_576MHz": {
         "type": "clk",
-        "direction": "I"
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "aresetn",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "DDS_MULT_ADDER_clk_576MHz",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
       },
       "rst": {
         "type": "rst",
         "direction": "I",
         "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
           "POLARITY": {
             "value": "ACTIVE_HIGH"
           }
@@ -65,6 +114,18 @@
       },
       "din_valid": {
         "direction": "I"
+      },
+      "TX_SIGNAL": {
+        "type": "data",
+        "direction": "O",
+        "left": "24",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 25}",
+            "value_src": "ip_prop"
+          }
+        }
       }
     },
     "components": {
@@ -101,6 +162,9 @@
           "M_PHASE_Has_TUSER": {
             "value": "Not_Required"
           },
+          "Negative_Sine": {
+            "value": "true"
+          },
           "Noise_Shaping": {
             "value": "None"
           },
@@ -127,59 +191,6 @@
           },
           "S_PHASE_Has_TUSER": {
             "value": "Not_Required"
-          }
-        }
-      },
-      "QAM_mapper_0": {
-        "vlnv": "xilinx.com:module_ref:QAM_mapper:1.0",
-        "xci_name": "DDS_MULT_ADDER_QAM_mapper_0_0",
-        "xci_path": "ip\\DDS_MULT_ADDER_QAM_mapper_0_0\\DDS_MULT_ADDER_QAM_mapper_0_0.xci",
-        "inst_hier_path": "QAM_mapper_0",
-        "reference_info": {
-          "ref_type": "hdl",
-          "ref_name": "QAM_mapper",
-          "boundary_crc": "0x0"
-        },
-        "ports": {
-          "clk": {
-            "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "ASSOCIATED_RESET": {
-                "value": "rst",
-                "value_src": "constant"
-              }
-            }
-          },
-          "rst": {
-            "type": "rst",
-            "direction": "I",
-            "parameters": {
-              "POLARITY": {
-                "value": "ACTIVE_HIGH"
-              }
-            }
-          },
-          "data_in": {
-            "direction": "I",
-            "left": "11",
-            "right": "0"
-          },
-          "din_valid": {
-            "direction": "I"
-          },
-          "data_out_i": {
-            "direction": "O",
-            "left": "2",
-            "right": "0"
-          },
-          "data_out_q": {
-            "direction": "O",
-            "left": "2",
-            "right": "0"
-          },
-          "dout_valid": {
-            "direction": "O"
           }
         }
       },
@@ -227,33 +238,121 @@
         "vlnv": "xilinx.com:ip:mult_gen:12.0",
         "xci_name": "DDS_MULT_ADDER_mult_gen_0_0",
         "xci_path": "ip\\DDS_MULT_ADDER_mult_gen_0_0\\DDS_MULT_ADDER_mult_gen_0_0.xci",
-        "inst_hier_path": "Q_mult"
+        "inst_hier_path": "Q_mult",
+        "parameters": {
+          "Multiplier_Construction": {
+            "value": "Use_Mults"
+          },
+          "PortAWidth": {
+            "value": "16"
+          },
+          "PortBWidth": {
+            "value": "8"
+          }
+        }
       },
       "I_mult": {
         "vlnv": "xilinx.com:ip:mult_gen:12.0",
         "xci_name": "DDS_MULT_ADDER_mult_gen_0_1",
         "xci_path": "ip\\DDS_MULT_ADDER_mult_gen_0_1\\DDS_MULT_ADDER_mult_gen_0_1.xci",
-        "inst_hier_path": "I_mult"
+        "inst_hier_path": "I_mult",
+        "parameters": {
+          "Multiplier_Construction": {
+            "value": "Use_Mults"
+          },
+          "PortAWidth": {
+            "value": "16"
+          },
+          "PortBWidth": {
+            "value": "8"
+          }
+        }
       },
       "c_addsub_0": {
         "vlnv": "xilinx.com:ip:c_addsub:12.0",
         "xci_name": "DDS_MULT_ADDER_c_addsub_0_0",
         "xci_path": "ip\\DDS_MULT_ADDER_c_addsub_0_0\\DDS_MULT_ADDER_c_addsub_0_0.xci",
-        "inst_hier_path": "c_addsub_0"
-      }
-    },
-    "interface_nets": {
-      "dds_compiler_0_M_AXIS_DATA": {
-        "interface_ports": [
-          "M_AXIS_DATA_0",
-          "dds_compiler_0/M_AXIS_DATA"
-        ]
+        "inst_hier_path": "c_addsub_0",
+        "parameters": {
+          "A_Width": {
+            "value": "24"
+          },
+          "B_Value": {
+            "value": "000000000000000000000000"
+          },
+          "B_Width": {
+            "value": "24"
+          },
+          "CE": {
+            "value": "false"
+          },
+          "Implementation": {
+            "value": "DSP48"
+          },
+          "Latency": {
+            "value": "1"
+          },
+          "Out_Width": {
+            "value": "25"
+          }
+        }
       },
-      "dds_compiler_0_M_AXIS_PHASE": {
-        "interface_ports": [
-          "M_AXIS_PHASE_0",
-          "dds_compiler_0/M_AXIS_PHASE"
-        ]
+      "QAM_mapper_0": {
+        "vlnv": "xilinx.com:module_ref:QAM_mapper:1.0",
+        "xci_name": "DDS_MULT_ADDER_QAM_mapper_0_0",
+        "xci_path": "ip\\DDS_MULT_ADDER_QAM_mapper_0_0\\DDS_MULT_ADDER_QAM_mapper_0_0.xci",
+        "inst_hier_path": "QAM_mapper_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "QAM_mapper",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "rst",
+                "value_src": "constant"
+              },
+              "CLK_DOMAIN": {
+                "value": "DDS_MULT_ADDER_clk_192MHz",
+                "value_src": "default_prop"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "din_valid": {
+            "direction": "I"
+          },
+          "data_out_i": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "data_out_q": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          },
+          "dout_valid": {
+            "direction": "O"
+          }
+        }
       }
     },
     "nets": {
@@ -281,19 +380,6 @@
           "c_addsub_0/B"
         ]
       },
-      "Net": {
-        "ports": [
-          "I_mult/CLK",
-          "Q_mult/CLK",
-          "c_addsub_0/CLK"
-        ]
-      },
-      "Net1": {
-        "ports": [
-          "I_RRC/aclk",
-          "Q_RRC/aclk"
-        ]
-      },
       "QAM_mapper_0_data_out_i": {
         "ports": [
           "QAM_mapper_0/data_out_i",
@@ -304,6 +390,13 @@
         "ports": [
           "QAM_mapper_0/data_out_q",
           "Q_RRC/s_axis_data_tdata"
+        ]
+      },
+      "QAM_mapper_0_dout_valid": {
+        "ports": [
+          "QAM_mapper_0/dout_valid",
+          "Q_RRC/s_axis_data_tvalid",
+          "I_RRC/s_axis_data_tvalid"
         ]
       },
       "Q_RRC_m_axis_data_tdata": {
@@ -318,22 +411,33 @@
           "c_addsub_0/A"
         ]
       },
-      "aclk_0_1": {
-        "ports": [
-          "clk_192MHz",
-          "dds_compiler_0/aclk"
-        ]
-      },
       "aresetn_0_1": {
         "ports": [
           "aresetn",
           "dds_compiler_0/aresetn"
         ]
       },
-      "clk_0_1": {
+      "c_addsub_0_S": {
+        "ports": [
+          "c_addsub_0/S",
+          "TX_SIGNAL"
+        ]
+      },
+      "clk_192MHz_1": {
+        "ports": [
+          "clk_192MHz",
+          "Q_RRC/aclk",
+          "I_RRC/aclk",
+          "QAM_mapper_0/clk"
+        ]
+      },
+      "clk_576MHz_1": {
         "ports": [
           "clk_576MHz",
-          "QAM_mapper_0/clk"
+          "dds_compiler_0/aclk",
+          "I_mult/CLK",
+          "Q_mult/CLK",
+          "c_addsub_0/CLK"
         ]
       },
       "data_in_0_1": {

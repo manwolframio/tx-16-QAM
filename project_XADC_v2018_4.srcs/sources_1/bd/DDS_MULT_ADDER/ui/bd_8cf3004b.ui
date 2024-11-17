@@ -1,47 +1,44 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.441941",
-   "Default View_TopLeft":"-491,-319",
+   "Default View_ScaleFactor":"0.763636",
+   "Default View_TopLeft":"-313,75",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port M_AXIS_DATA_0 -pg 1 -lvl 5 -x 1220 -y -60 -defaultsOSRD
-preplace port M_AXIS_PHASE_0 -pg 1 -lvl 5 -x 1220 -y 0 -defaultsOSRD
-preplace port port-id_clk_192MHz -pg 1 -lvl 0 -x -300 -y -60 -defaultsOSRD
-preplace port port-id_aresetn -pg 1 -lvl 0 -x -300 -y -30 -defaultsOSRD
-preplace port port-id_clk_576MHz -pg 1 -lvl 0 -x -300 -y 90 -defaultsOSRD
-preplace port port-id_rst -pg 1 -lvl 0 -x -300 -y 120 -defaultsOSRD
-preplace port port-id_din_valid -pg 1 -lvl 0 -x -300 -y 180 -defaultsOSRD
-preplace portBus data_in -pg 1 -lvl 0 -x -300 -y 150 -defaultsOSRD
-preplace inst dds_compiler_0 -pg 1 -lvl 1 -x 190 -y -40 -defaultsOSRD
-preplace inst QAM_mapper_0 -pg 1 -lvl 1 -x 190 -y 140 -defaultsOSRD
-preplace inst Q_RRC -pg 1 -lvl 2 -x 560 -y 350 -defaultsOSRD
-preplace inst I_RRC -pg 1 -lvl 2 -x 560 -y 160 -defaultsOSRD -resize 360 180
-preplace inst DDS_splitter -pg 1 -lvl 2 -x 560 -y -140 -defaultsOSRD
-preplace inst Q_mult -pg 1 -lvl 3 -x 900 -y 350 -defaultsOSRD
-preplace inst I_mult -pg 1 -lvl 3 -x 900 -y 160 -defaultsOSRD -resize 140 116
-preplace inst c_addsub_0 -pg 1 -lvl 4 -x 1110 -y 180 -defaultsOSRD
-preplace netloc aclk_0_1 1 0 1 -280 -60n
-preplace netloc aresetn_0_1 1 0 1 N -30
-preplace netloc clk_0_1 1 0 1 -280 90n
-preplace netloc rst_0_1 1 0 1 -280 120n
-preplace netloc data_in_0_1 1 0 1 N 150
-preplace netloc din_valid_0_1 1 0 1 -280 170n
-preplace netloc dds_compiler_0_m_axis_data_tdata 1 1 1 330 -140n
-preplace netloc Q_RRC_m_axis_data_tdata 1 2 1 NJ 350
-preplace netloc DDS_splitter_high_byte 1 2 1 770 -150n
-preplace netloc I_RRC_m_axis_data_tdata 1 2 1 NJ 160
-preplace netloc DDS_splitter_low_byte 1 2 1 760 -130n
-preplace netloc QAM_mapper_0_data_out_q 1 1 1 330 140n
-preplace netloc QAM_mapper_0_data_out_i 1 1 1 330 120n
-preplace netloc Q_mult_P 1 3 1 1000 150n
-preplace netloc I_mult_P 1 3 1 990 160n
-preplace netloc Net 1 2 2 780 240 1010
-preplace netloc Net1 1 1 1 340 210n
-preplace netloc dds_compiler_0_M_AXIS_DATA 1 1 4 340 -60 N -60 N -60 N
-preplace netloc dds_compiler_0_M_AXIS_PHASE 1 1 4 340 0 N 0 N 0 N
-levelinfo -pg 1 -300 190 560 900 1110 1220
-pagesize -pg 1 -db -bbox -sgen -430 -380 1380 560
+preplace port port-id_clk_192MHz -pg 1 -lvl 0 -x -40 -y 420 -defaultsOSRD
+preplace port port-id_aresetn -pg 1 -lvl 0 -x -40 -y 220 -defaultsOSRD
+preplace port port-id_clk_576MHz -pg 1 -lvl 0 -x -40 -y 630 -defaultsOSRD
+preplace port port-id_rst -pg 1 -lvl 0 -x -40 -y 500 -defaultsOSRD
+preplace port port-id_din_valid -pg 1 -lvl 0 -x -40 -y 540 -defaultsOSRD
+preplace portBus data_in -pg 1 -lvl 0 -x -40 -y 520 -defaultsOSRD
+preplace portBus TX_SIGNAL -pg 1 -lvl 5 -x 1260 -y 440 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 3 -x 890 -y 220 -defaultsOSRD
+preplace inst Q_RRC -pg 1 -lvl 2 -x 500 -y 550 -defaultsOSRD
+preplace inst I_RRC -pg 1 -lvl 2 -x 500 -y 110 -defaultsOSRD -resize 360 180
+preplace inst DDS_splitter -pg 1 -lvl 2 -x 500 -y 380 -defaultsOSRD
+preplace inst Q_mult -pg 1 -lvl 3 -x 890 -y 560 -defaultsOSRD
+preplace inst I_mult -pg 1 -lvl 3 -x 890 -y 390 -defaultsOSRD -resize 140 116
+preplace inst c_addsub_0 -pg 1 -lvl 4 -x 1150 -y 440 -defaultsOSRD
+preplace inst QAM_mapper_0 -pg 1 -lvl 1 -x 120 -y 510 -defaultsOSRD
+preplace netloc DDS_splitter_high_byte 1 2 1 710 370n
+preplace netloc DDS_splitter_low_byte 1 2 1 700 390n
+preplace netloc I_RRC_m_axis_data_tdata 1 2 1 740 140n
+preplace netloc I_mult_P 1 3 1 1040 390n
+preplace netloc QAM_mapper_0_data_out_i 1 1 1 260 90n
+preplace netloc QAM_mapper_0_data_out_q 1 1 1 260 510n
+preplace netloc Q_RRC_m_axis_data_tdata 1 2 1 N 560
+preplace netloc Q_mult_P 1 3 1 1050 420n
+preplace netloc aresetn_0_1 1 0 3 NJ 220 NJ 220 730J
+preplace netloc data_in_0_1 1 0 1 NJ 520
+preplace netloc dds_compiler_0_m_axis_data_tdata 1 1 3 290 300 NJ 300 1040
+preplace netloc din_valid_0_1 1 0 1 NJ 540
+preplace netloc rst_0_1 1 0 1 NJ 500
+preplace netloc clk_576MHz_1 1 0 4 -20J 640 NJ 640 720 470 1060J
+preplace netloc clk_192MHz_1 1 0 2 -20 420 280
+preplace netloc c_addsub_0_S 1 4 1 N 440
+preplace netloc QAM_mapper_0_dout_valid 1 1 1 270 120n
+levelinfo -pg 1 -40 120 500 890 1150 1260
+pagesize -pg 1 -db -bbox -sgen -180 0 1430 680
 "
 }
 0

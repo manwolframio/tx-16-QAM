@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xB36CF05653110DF0",
+      "boundary_crc": "0xB36CF05603A4EEC7",
       "device": "xc7vx485tffg1157-1",
       "gen_directory": "../../../../project_XADC_v2018_4.gen/sources_1/bd/CLOCKS",
       "name": "CLOCKS",
@@ -11,7 +11,9 @@
       "validated": "true"
     },
     "design_tree": {
-      "pll_clk": ""
+      "clk_wiz_0": "",
+      "clk_wiz_1": "",
+      "locked_checker_0": ""
     },
     "ports": {
       "clk_192MHz": {
@@ -19,11 +21,11 @@
         "direction": "O",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "/pll_clk_clk_out1",
+            "value": "/clk_wiz_1_clk_out1",
             "value_src": "ip_prop"
           },
           "FREQ_HZ": {
-            "value": "191666666"
+            "value": "192000000"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -44,11 +46,11 @@
         "direction": "O",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "/pll_clk_clk_out1",
+            "value": "/clk_wiz_0_clk_out1",
             "value_src": "ip_prop"
           },
           "FREQ_HZ": {
-            "value": "52272727"
+            "value": "52000000"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -69,11 +71,11 @@
         "direction": "O",
         "parameters": {
           "CLK_DOMAIN": {
-            "value": "/pll_clk_clk_out1",
+            "value": "/clk_wiz_1_clk_out1",
             "value_src": "ip_prop"
           },
           "FREQ_HZ": {
-            "value": "575000000"
+            "value": "576000000"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -98,8 +100,7 @@
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "100000000",
-            "value_src": "default"
+            "value": "36000000"
           },
           "FREQ_TOLERANCE_HZ": {
             "value": "0",
@@ -133,140 +134,172 @@
       }
     },
     "components": {
-      "pll_clk": {
+      "clk_wiz_0": {
         "vlnv": "xilinx.com:ip:clk_wiz:6.0",
-        "xci_name": "CLOCKS_clk_wiz_0_0",
-        "xci_path": "ip\\CLOCKS_clk_wiz_0_0\\CLOCKS_clk_wiz_0_0.xci",
-        "inst_hier_path": "pll_clk",
+        "xci_name": "CLOCKS_clk_wiz_0_1",
+        "xci_path": "ip\\CLOCKS_clk_wiz_0_1\\CLOCKS_clk_wiz_0_1.xci",
+        "inst_hier_path": "clk_wiz_0",
         "parameters": {
-          "CLKOUT1_DRIVES": {
-            "value": "BUFG"
+          "CLKIN1_JITTER_PS": {
+            "value": "277.77000000000004"
           },
           "CLKOUT1_JITTER": {
-            "value": "105.275"
+            "value": "230.959"
           },
           "CLKOUT1_PHASE_ERROR": {
-            "value": "158.301"
+            "value": "199.468"
           },
           "CLKOUT1_REQUESTED_OUT_FREQ": {
-            "value": "576"
+            "value": "52"
           },
-          "CLKOUT2_DRIVES": {
-            "value": "BUFG"
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "27.625"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "27.778"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "19.125"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "36"
+          }
+        }
+      },
+      "clk_wiz_1": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "CLOCKS_clk_wiz_0_2",
+        "xci_path": "ip\\CLOCKS_clk_wiz_0_2\\CLOCKS_clk_wiz_0_2.xci",
+        "inst_hier_path": "clk_wiz_1",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "277.77000000000004"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "151.084"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "173.591"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "192"
           },
           "CLKOUT2_JITTER": {
-            "value": "126.362"
+            "value": "129.300"
           },
           "CLKOUT2_PHASE_ERROR": {
-            "value": "158.301"
+            "value": "173.591"
           },
           "CLKOUT2_REQUESTED_OUT_FREQ": {
-            "value": "192"
+            "value": "576"
           },
           "CLKOUT2_USED": {
             "value": "true"
           },
-          "CLKOUT3_DRIVES": {
-            "value": "BUFG"
-          },
-          "CLKOUT3_JITTER": {
-            "value": "161.572"
-          },
-          "CLKOUT3_PHASE_ERROR": {
-            "value": "158.301"
-          },
-          "CLKOUT3_REQUESTED_OUT_FREQ": {
-            "value": "52"
-          },
-          "CLKOUT3_USED": {
-            "value": "true"
-          },
-          "CLKOUT4_DRIVES": {
-            "value": "BUFG"
-          },
-          "CLKOUT5_DRIVES": {
-            "value": "BUFG"
-          },
-          "CLKOUT6_DRIVES": {
-            "value": "BUFG"
-          },
-          "CLKOUT7_DRIVES": {
-            "value": "BUFG"
-          },
-          "CLK_OUT1_PORT": {
-            "value": "clk_576MHz"
-          },
-          "CLK_OUT2_PORT": {
-            "value": "clk_192MHz"
-          },
-          "CLK_OUT3_PORT": {
-            "value": "clk_52MHz"
-          },
-          "MMCM_BANDWIDTH": {
-            "value": "OPTIMIZED"
-          },
           "MMCM_CLKFBOUT_MULT_F": {
-            "value": "23"
+            "value": "32.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "27.778"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
           },
           "MMCM_CLKOUT0_DIVIDE_F": {
-            "value": "2"
+            "value": "6.000"
           },
           "MMCM_CLKOUT1_DIVIDE": {
-            "value": "6"
-          },
-          "MMCM_CLKOUT2_DIVIDE": {
-            "value": "22"
-          },
-          "MMCM_COMPENSATION": {
-            "value": "ZHOLD"
-          },
-          "MMCM_DIVCLK_DIVIDE": {
             "value": "2"
           },
-          "NUM_OUT_CLKS": {
-            "value": "3"
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
           },
-          "PRIMITIVE": {
-            "value": "PLL"
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "36"
+          }
+        }
+      },
+      "locked_checker_0": {
+        "vlnv": "xilinx.com:module_ref:locked_checker:1.0",
+        "xci_name": "CLOCKS_locked_checker_0_0",
+        "xci_path": "ip\\CLOCKS_locked_checker_0_0\\CLOCKS_locked_checker_0_0.xci",
+        "inst_hier_path": "locked_checker_0",
+        "reference_info": {
+          "ref_type": "unknown",
+          "ref_name": "locked_checker",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_locked52": {
+            "direction": "I"
+          },
+          "clk_locke192_576": {
+            "direction": "I"
+          },
+          "clk_global_lock": {
+            "direction": "O"
           }
         }
       }
     },
     "nets": {
-      "clk_in1_0_1": {
+      "clk_in_36MHz_1": {
         "ports": [
           "clk_in_36MHz",
-          "pll_clk/clk_in1"
+          "clk_wiz_1/clk_in1",
+          "clk_wiz_0/clk_in1"
         ]
       },
-      "clk_wiz_0_clk_192MHz": {
+      "clk_wiz_0_clk_out1": {
         "ports": [
-          "pll_clk/clk_192MHz",
-          "clk_192MHz"
-        ]
-      },
-      "clk_wiz_0_clk_52MHz": {
-        "ports": [
-          "pll_clk/clk_52MHz",
+          "clk_wiz_0/clk_out1",
           "clk_52MHz"
-        ]
-      },
-      "clk_wiz_0_clk_576MHz": {
-        "ports": [
-          "pll_clk/clk_576MHz",
-          "clk_576MHz"
         ]
       },
       "clk_wiz_0_locked": {
         "ports": [
-          "pll_clk/locked",
+          "clk_wiz_0/locked",
+          "locked_checker_0/clk_locked52"
+        ]
+      },
+      "clk_wiz_1_clk_out1": {
+        "ports": [
+          "clk_wiz_1/clk_out1",
+          "clk_192MHz"
+        ]
+      },
+      "clk_wiz_1_clk_out2": {
+        "ports": [
+          "clk_wiz_1/clk_out2",
+          "clk_576MHz"
+        ]
+      },
+      "clk_wiz_1_locked": {
+        "ports": [
+          "clk_wiz_1/locked",
+          "locked_checker_0/clk_locke192_576"
+        ]
+      },
+      "locked_checker_0_clk_global_lock": {
+        "ports": [
+          "locked_checker_0/clk_global_lock",
           "locked"
         ]
       },
-      "reset_0_1": {
+      "rst_1": {
         "ports": [
           "rst",
-          "pll_clk/reset"
+          "clk_wiz_0/reset",
+          "clk_wiz_1/reset"
         ]
       }
     }
