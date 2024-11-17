@@ -1,8 +1,8 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
---Date        : Fri Nov  1 19:02:25 2024
---Host        : Vivobook-manso running 64-bit major release  (build 9200)
+--Date        : Sun Nov 17 14:50:10 2024
+--Host        : workstation running 64-bit major release  (build 9200)
 --Command     : generate_target XADC_FIFO_wrapper.bd
 --Design      : XADC_FIFO_wrapper
 --Purpose     : IP block netlist

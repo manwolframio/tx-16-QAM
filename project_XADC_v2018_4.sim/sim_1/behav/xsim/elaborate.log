@@ -1,8 +1,9 @@
 Vivado Simulator v2021.2
 Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_17 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_21 -L secureip -L xpm --snapshot prueba_DDS_tb_behav xil_defaultlib.prueba_DDS_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_17 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_21 -L fir_compiler_v7_2_17 -L c_reg_fd_v12_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L fifo_generator_v13_2_6 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FULL_QAM_TX_tb_behav xil_defaultlib.FULL_QAM_TX_tb xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
+Pass Through NonSizing Optimizer
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
@@ -12,21 +13,106 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling package unisim.vcomponents
-Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
-Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
-Compiling package dds_compiler_v6_0_21.dds_compiler_v6_0_21_viv_comp
 Compiling package ieee.std_logic_arith
-Compiling package ieee.std_logic_signed
-Compiling package dds_compiler_v6_0_21.pkg_dds_compiler_v6_0_21
-Compiling package dds_compiler_v6_0_21.dds_compiler_v6_0_21_hdl_comps
-Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
-Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package fir_compiler_v7_2_17.fir_compiler_v7_2_17_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2_17.globals_pkg
+Compiling package fir_compiler_v7_2_17.components
 Compiling package ieee.math_real
 Compiling package axi_utils_v2_0_6.global_util_pkg
 Compiling package axi_utils_v2_0_6.axi_utils_comps
-Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package mult_gen_v12_0_17.mult_gen_v12_0_17_viv_comp
+Compiling package mult_gen_v12_0_17.mult_gen_v12_0_17_pkg
+Compiling package mult_gen_v12_0_17.dsp_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_21.dds_compiler_v6_0_21_viv_comp
+Compiling package dds_compiler_v6_0_21.pkg_dds_compiler_v6_0_21
+Compiling package dds_compiler_v6_0_21.dds_compiler_v6_0_21_hdl_comps
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
 Compiling package dds_compiler_v6_0_21.pkg_betas
 Compiling package dds_compiler_v6_0_21.pkg_alphas
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=27.62...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.CLOCKS_inst_0_clk_wiz_0_0_clk_wi...
+Compiling module xil_defaultlib.CLOCKS_inst_0_clk_wiz_0_0
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.CLOCKS_inst_0_clk_wiz_1_0_clk_wi...
+Compiling module xil_defaultlib.CLOCKS_inst_0_clk_wiz_1_0
+Compiling architecture rtl of entity xil_defaultlib.locked_checker [locked_checker_default]
+Compiling architecture clocks_inst_0_locked_checker_0_0_arch of entity xil_defaultlib.CLOCKS_inst_0_locked_checker_0_0 [clocks_inst_0_locked_checker_0_0...]
+Compiling architecture structure of entity xil_defaultlib.CLOCKS_inst_0 [clocks_inst_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDS_splitter [dds_splitter_default]
+Compiling architecture dds_mult_adder_inst_0_dds_splitter_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_DDS_splitter_0 [dds_mult_adder_inst_0_dds_splitt...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_srl_fifo [\glb_srl_fifo(width=16,has_ifx=t...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_ifx_slave [\glb_ifx_slave(width=16,has_ifx=...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.buff [\buff(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(mask="11111111111111111...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.calc [\calc(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.addsub_mult_accum [\addsub_mult_accum(c_xdevicefami...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=6,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.single_rate [\single_rate(c_xdevicefamily="vi...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.fir_compiler_v7_2_17_viv [\fir_compiler_v7_2_17_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_17.fir_compiler_v7_2_17 [\fir_compiler_v7_2_17(c_xdevicef...]
+Compiling architecture dds_mult_adder_inst_0_i_rrc_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_I_RRC_0 [dds_mult_adder_inst_0_i_rrc_0_de...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.op_resize [\op_resize(bi_width=8,ao_width=2...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.dsp [\dsp(c_xdevicefamily="virtex7",c...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.mult_gen_v12_0_17_viv [\mult_gen_v12_0_17_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.mult_gen_v12_0_17 [\mult_gen_v12_0_17(c_a_width=16,...]
+Compiling architecture dds_mult_adder_inst_0_i_mult_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_I_mult_0 [dds_mult_adder_inst_0_i_mult_0_d...]
+Compiling architecture behavioral of entity xil_defaultlib.QAM_mapper [qam_mapper_default]
+Compiling architecture dds_mult_adder_inst_0_qam_mapper_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_QAM_mapper_0_0 [dds_mult_adder_inst_0_qam_mapper...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.single_rate [\single_rate(c_xdevicefamily="vi...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.fir_compiler_v7_2_17_viv [\fir_compiler_v7_2_17_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_17.fir_compiler_v7_2_17 [\fir_compiler_v7_2_17(c_xdevicef...]
+Compiling architecture dds_mult_adder_inst_0_q_rrc_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_Q_RRC_0 [dds_mult_adder_inst_0_q_rrc_0_de...]
+Compiling architecture dds_mult_adder_inst_0_q_mult_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_Q_mult_0 [dds_mult_adder_inst_0_q_mult_0_d...]
+Compiling architecture behavioral of entity xil_defaultlib.arst_sinc [arst_sinc_default]
+Compiling architecture dds_mult_adder_inst_0_arst_sinc_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_arst_sinc_0_0 [dds_mult_adder_inst_0_arst_sinc_...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(preg=...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture dds_mult_adder_inst_0_c_addsub_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_c_addsub_0_0 [dds_mult_adder_inst_0_c_addsub_0...]
 Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
 Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
 Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_rdy [\dds_compiler_v6_0_21_rdy(c_has_...]
@@ -45,8 +131,23 @@ Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\x
 Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_core [\dds_compiler_v6_0_21_core(c_xde...]
 Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_viv [\dds_compiler_v6_0_21_viv(c_accu...]
 Compiling architecture xilinx of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21 [\dds_compiler_v6_0_21(c_accumula...]
-Compiling architecture dds_mult_adder_dds_compiler_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_dds_compiler_0_0 [dds_mult_adder_dds_compiler_0_0_...]
-Compiling architecture structure of entity xil_defaultlib.DDS_MULT_ADDER [dds_mult_adder_default]
-Compiling architecture structure of entity xil_defaultlib.DDS_MULT_ADDER_wrapper [dds_mult_adder_wrapper_default]
-Compiling architecture tb of entity xil_defaultlib.prueba_dds_tb
-Built simulation snapshot prueba_DDS_tb_behav
+Compiling architecture dds_mult_adder_inst_0_dds_compiler_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_dds_compiler_0_0 [dds_mult_adder_inst_0_dds_compil...]
+Compiling architecture structure of entity xil_defaultlib.DDS_MULT_ADDER_inst_0 [dds_mult_adder_inst_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_26 [contador_26_default]
+Compiling architecture xadc_fifo_inst_0_contador_26_0_0_arch of entity xil_defaultlib.XADC_FIFO_inst_0_Contador_26_0_0 [xadc_fifo_inst_0_contador_26_0_0...]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_52 [contador_52_default]
+Compiling architecture xadc_fifo_inst_0_contador_52_0_0_arch of entity xil_defaultlib.XADC_FIFO_inst_0_Contador_52_0_0 [xadc_fifo_inst_0_contador_52_0_0...]
+Compiling architecture behavioral of entity xil_defaultlib.FSM_FIFO_Entregable [fsm_fifo_entregable_default]
+Compiling architecture xadc_fifo_inst_0_fsm_fifo_entregable_0_0_arch of entity xil_defaultlib.XADC_FIFO_inst_0_FSM_FIFO_Entregable_0_0 [xadc_fifo_inst_0_fsm_fifo_entreg...]
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_sync_stag...
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_bhv_ver_a...
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_CONV_VER(...
+Compiling module fifo_generator_v13_2_6.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.XADC_FIFO_inst_0_fifo_generator_...
+Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000000011"...]
+Compiling architecture xilinx of entity xil_defaultlib.XADC_FIFO_inst_0_xadc_wiz_0_0 [xadc_fifo_inst_0_xadc_wiz_0_0_de...]
+Compiling architecture structure of entity xil_defaultlib.XADC_FIFO_inst_0 [xadc_fifo_inst_0_default]
+Compiling architecture structure of entity xil_defaultlib.FULL_QAM_TX [full_qam_tx_default]
+Compiling architecture structure of entity xil_defaultlib.FULL_QAM_TX_wrapper [full_qam_tx_wrapper_default]
+Compiling architecture tb of entity xil_defaultlib.full_qam_tx_tb
+Built simulation snapshot FULL_QAM_TX_tb_behav

@@ -1,0 +1,301 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0xB36CF05603A4EEC7",
+      "design_src": "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/CLOCKS/CLOCKS.bd",
+      "device": "xc7vx485tffg1157-1",
+      "name": "CLOCKS_inst_0",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true",
+      "variant": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "clk_wiz_1": "",
+      "locked_checker_0": ""
+    },
+    "ports": {
+      "clk_192MHz": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "192000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_52MHz": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "52000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_576MHz": {
+        "type": "clk",
+        "direction": "O",
+        "parameters": {
+          "FREQ_HZ": {
+            "value": "576000000",
+            "value_src": "default"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "clk_in_36MHz": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "FULL_QAM_TX_clk_in_36MHz_0",
+            "value_src": "strong"
+          },
+          "FREQ_HZ": {
+            "value": "36000000",
+            "value_src": "strong"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "strong"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "strong"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "strong"
+          }
+        }
+      },
+      "locked": {
+        "direction": "O"
+      },
+      "rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "strong"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH",
+            "value_src": "strong"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "CLOCKS_inst_0_clk_wiz_0_0",
+        "xci_path": "ip\\CLOCKS_inst_0_clk_wiz_0_0\\CLOCKS_inst_0_clk_wiz_0_0.xci",
+        "inst_hier_path": "clk_wiz_0",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "277.77000000000004"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "230.959"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "199.468"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "52"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "27.625"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "27.778"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "19.125"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "36"
+          }
+        }
+      },
+      "clk_wiz_1": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "CLOCKS_inst_0_clk_wiz_1_0",
+        "xci_path": "ip\\CLOCKS_inst_0_clk_wiz_1_0\\CLOCKS_inst_0_clk_wiz_1_0.xci",
+        "inst_hier_path": "clk_wiz_1",
+        "parameters": {
+          "CLKIN1_JITTER_PS": {
+            "value": "277.77000000000004"
+          },
+          "CLKOUT1_JITTER": {
+            "value": "151.084"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "173.591"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "192"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "129.300"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "173.591"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "576"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "32.000"
+          },
+          "MMCM_CLKIN1_PERIOD": {
+            "value": "27.778"
+          },
+          "MMCM_CLKIN2_PERIOD": {
+            "value": "10.0"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "6.000"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "2"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          },
+          "PRIM_IN_FREQ": {
+            "value": "36"
+          }
+        }
+      },
+      "locked_checker_0": {
+        "vlnv": "xilinx.com:module_ref:locked_checker:1.0",
+        "xci_name": "CLOCKS_inst_0_locked_checker_0_0",
+        "xci_path": "ip\\CLOCKS_inst_0_locked_checker_0_0\\CLOCKS_inst_0_locked_checker_0_0.xci",
+        "inst_hier_path": "locked_checker_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "locked_checker",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk_locked52": {
+            "direction": "I"
+          },
+          "clk_locke192_576": {
+            "direction": "I"
+          },
+          "clk_global_lock": {
+            "direction": "O"
+          }
+        }
+      }
+    },
+    "nets": {
+      "clk_in_36MHz_1": {
+        "ports": [
+          "clk_in_36MHz",
+          "clk_wiz_1/clk_in1",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "clk_52MHz"
+        ]
+      },
+      "clk_wiz_0_locked": {
+        "ports": [
+          "clk_wiz_0/locked",
+          "locked_checker_0/clk_locked52"
+        ]
+      },
+      "clk_wiz_1_clk_out1": {
+        "ports": [
+          "clk_wiz_1/clk_out1",
+          "clk_192MHz"
+        ]
+      },
+      "clk_wiz_1_clk_out2": {
+        "ports": [
+          "clk_wiz_1/clk_out2",
+          "clk_576MHz"
+        ]
+      },
+      "clk_wiz_1_locked": {
+        "ports": [
+          "clk_wiz_1/locked",
+          "locked_checker_0/clk_locke192_576"
+        ]
+      },
+      "locked_checker_0_clk_global_lock": {
+        "ports": [
+          "locked_checker_0/clk_global_lock",
+          "locked"
+        ]
+      },
+      "rst_1": {
+        "ports": [
+          "rst",
+          "clk_wiz_0/reset",
+          "clk_wiz_1/reset"
+        ]
+      }
+    }
+  }
+}

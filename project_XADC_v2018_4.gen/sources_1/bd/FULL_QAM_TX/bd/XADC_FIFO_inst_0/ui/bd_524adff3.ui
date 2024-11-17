@@ -1,0 +1,67 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.19384",
+   "Default View_TopLeft":"-291,163",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port Vp_Vn_0 -pg 1 -lvl 0 -x -460 -y 750 -defaultsOSRD
+preplace port s_drp_0 -pg 1 -lvl 0 -x -460 -y 720 -defaultsOSRD
+preplace port port-id_alarm_out_0 -pg 1 -lvl 3 -x 570 -y 820 -defaultsOSRD
+preplace port port-id_busy_out_0 -pg 1 -lvl 3 -x 570 -y 880 -defaultsOSRD
+preplace port port-id_clk_52MHz -pg 1 -lvl 0 -x -460 -y 240 -defaultsOSRD
+preplace port port-id_clk_out -pg 1 -lvl 3 -x 570 -y 910 -defaultsOSRD
+preplace port port-id_eoc_out_0 -pg 1 -lvl 3 -x 570 -y 790 -defaultsOSRD
+preplace port port-id_eos_out_0 -pg 1 -lvl 3 -x 570 -y 850 -defaultsOSRD
+preplace port port-id_fifo_full -pg 1 -lvl 3 -x 570 -y 320 -defaultsOSRD
+preplace port port-id_locked -pg 1 -lvl 3 -x 570 -y 610 -defaultsOSRD
+preplace port port-id_locked_clk -pg 1 -lvl 0 -x -460 -y 540 -defaultsOSRD
+preplace port port-id_ot_out_0 -pg 1 -lvl 3 -x 570 -y 730 -defaultsOSRD
+preplace port port-id_rd_en_fifo -pg 1 -lvl 3 -x 570 -y 480 -defaultsOSRD
+preplace port port-id_reset_in_0 -pg 1 -lvl 0 -x -460 -y 270 -defaultsOSRD
+preplace port port-id_user_temp_alarm_out_0 -pg 1 -lvl 3 -x 570 -y 640 -defaultsOSRD
+preplace port port-id_vccaux_alarm_out_0 -pg 1 -lvl 3 -x 570 -y 700 -defaultsOSRD
+preplace port port-id_vccint_alarm_out_0 -pg 1 -lvl 3 -x 570 -y 670 -defaultsOSRD
+preplace port port-id_wr_clk -pg 1 -lvl 3 -x 570 -y 940 -defaultsOSRD
+preplace port port-id_wr_rst_busy_0 -pg 1 -lvl 3 -x 570 -y 180 -defaultsOSRD
+preplace portBus channel_out_0 -pg 1 -lvl 3 -x 570 -y 760 -defaultsOSRD
+preplace portBus fifo_din -pg 1 -lvl 0 -x -460 -y 100 -defaultsOSRD
+preplace portBus fifo_dout -pg 1 -lvl 3 -x 570 -y 350 -defaultsOSRD
+preplace portBus rd_data_count_0 -pg 1 -lvl 3 -x 570 -y 110 -defaultsOSRD
+preplace portBus wr_data_count_0 -pg 1 -lvl 3 -x 570 -y 140 -defaultsOSRD
+preplace inst Contador_26_0 -pg 1 -lvl 2 -x 270 -y 760 -defaultsOSRD
+preplace inst Contador_52_0 -pg 1 -lvl 2 -x 270 -y 1120 -defaultsOSRD
+preplace inst FSM_FIFO_Entregable_0 -pg 1 -lvl 2 -x 270 -y 950 -defaultsOSRD
+preplace inst fifo_generator_0 -pg 1 -lvl 1 -x -160 -y 410 -defaultsOSRD
+preplace inst xadc_wiz_0 -pg 1 -lvl 2 -x 270 -y 400 -defaultsOSRD
+preplace netloc Contador_26_0_rd_clk 1 1 2 110 830 400
+preplace netloc Contador_52_0_wr_clk 1 0 3 -380 1180 40 1200 520J
+preplace netloc FSM_FIFO_Entregable_0_rd_en_fifo 1 0 3 -370 210 N 210 450J
+preplace netloc clk_wiz_0_clk_out1 1 0 3 -440 220 90 1190 490
+preplace netloc clk_wiz_0_locked 1 0 3 -440J 570 40 630 470
+preplace netloc fifo_din_1 1 0 1 -410J 100n
+preplace netloc fifo_generator_0_dout 1 0 3 -390 190 N 190 530J
+preplace netloc fifo_generator_0_empty 1 0 2 -360 970 30
+preplace netloc fifo_generator_0_full 1 0 3 -360 200 N 200 520J
+preplace netloc fifo_generator_0_prog_full 1 1 1 60 410n
+preplace netloc fifo_generator_0_rd_data_count 1 1 2 40 110 NJ
+preplace netloc fifo_generator_0_rd_rst_busy 1 1 1 50 450n
+preplace netloc fifo_generator_0_wr_data_count 1 1 2 60 140 NJ
+preplace netloc fifo_generator_0_wr_rst_busy 1 1 2 70 180 NJ
+preplace netloc reset_in_0_1 1 0 2 -400 230 80
+preplace netloc xadc_wiz_0_alarm_out 1 2 1 430 440n
+preplace netloc xadc_wiz_0_busy_out 1 2 1 410 480n
+preplace netloc xadc_wiz_0_channel_out 1 2 1 460 400n
+preplace netloc xadc_wiz_0_eoc_out 1 2 1 440 420n
+preplace netloc xadc_wiz_0_eos_out 1 2 1 420 460n
+preplace netloc xadc_wiz_0_ot_out 1 2 1 480 380n
+preplace netloc xadc_wiz_0_user_temp_alarm_out 1 2 1 510 320n
+preplace netloc xadc_wiz_0_vccaux_alarm_out 1 2 1 490 360n
+preplace netloc xadc_wiz_0_vccint_alarm_out 1 2 1 500 340n
+preplace netloc Vp_Vn_0_1 1 0 2 -430J 240 110
+preplace netloc s_drp_0_1 1 0 2 -420J 250 100
+levelinfo -pg 1 -460 -160 270 570
+pagesize -pg 1 -db -bbox -sgen -610 -170 770 1250
+"
+}
+

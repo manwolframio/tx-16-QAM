@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x2BCF7D42CB790662",
+      "boundary_crc": "0x7BC073A1864A8447",
       "device": "xc7vx485tffg1157-1",
       "gen_directory": "../../../../project_XADC_v2018_4.gen/sources_1/bd/DDS_MULT_ADDER",
       "name": "DDS_MULT_ADDER",
@@ -18,7 +18,8 @@
       "Q_mult": "",
       "I_mult": "",
       "c_addsub_0": "",
-      "QAM_mapper_0": ""
+      "QAM_mapper_0": "",
+      "arst_sinc_0": ""
     },
     "ports": {
       "clk_192MHz": {
@@ -50,28 +51,10 @@
           }
         }
       },
-      "aresetn": {
-        "type": "rst",
-        "direction": "I",
-        "parameters": {
-          "INSERT_VIP": {
-            "value": "0",
-            "value_src": "default"
-          },
-          "POLARITY": {
-            "value": "ACTIVE_LOW",
-            "value_src": "default"
-          }
-        }
-      },
       "clk_576MHz": {
         "type": "clk",
         "direction": "I",
         "parameters": {
-          "ASSOCIATED_RESET": {
-            "value": "aresetn",
-            "value_src": "default"
-          },
           "CLK_DOMAIN": {
             "value": "DDS_MULT_ADDER_clk_576MHz",
             "value_src": "default"
@@ -353,6 +336,31 @@
             "direction": "O"
           }
         }
+      },
+      "arst_sinc_0": {
+        "vlnv": "xilinx.com:module_ref:arst_sinc:1.0",
+        "xci_name": "DDS_MULT_ADDER_arst_sinc_0_0",
+        "xci_path": "ip\\DDS_MULT_ADDER_arst_sinc_0_0\\DDS_MULT_ADDER_arst_sinc_0_0.xci",
+        "inst_hier_path": "arst_sinc_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "arst_sinc",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "input_signal": {
+            "direction": "I",
+            "parameters": {
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "user_prop"
+              }
+            }
+          },
+          "output_signal": {
+            "direction": "O"
+          }
+        }
       }
     },
     "nets": {
@@ -411,9 +419,9 @@
           "c_addsub_0/A"
         ]
       },
-      "aresetn_0_1": {
+      "arst_sinc_0_output_signal": {
         "ports": [
-          "aresetn",
+          "arst_sinc_0/output_signal",
           "dds_compiler_0/aresetn"
         ]
       },
@@ -461,7 +469,8 @@
       "rst_0_1": {
         "ports": [
           "rst",
-          "QAM_mapper_0/rst"
+          "QAM_mapper_0/rst",
+          "arst_sinc_0/input_signal"
         ]
       }
     }

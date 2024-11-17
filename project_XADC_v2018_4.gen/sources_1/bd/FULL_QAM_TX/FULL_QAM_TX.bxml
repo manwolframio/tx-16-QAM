@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Root MajorVersion="0" MinorVersion="39">
+  <CompositeFile CompositeFileTopName="FULL_QAM_TX" CanBeSetAsTop="false" CanDisplayChildGraph="true">
+    <Description>Composite Fileset</Description>
+    <Generation Name="SYNTHESIS" State="STALE" Timestamp="1731860251"/>
+    <Generation Name="IMPLEMENTATION" State="STALE" Timestamp="1731860251"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1731860272"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1731860272"/>
+    <FileCollection Name="SOURCES" Type="SOURCES">
+      <File Name="synth\FULL_QAM_TX.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim\FULL_QAM_TX.vhd" Type="VHDL">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="FULL_QAM_TX_ooc.xdc" Type="XDC">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="OUT_OF_CONTEXT"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="hw_handoff\FULL_QAM_TX.hwh" Type="HwHandoff">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="FULL_QAM_TX.bda">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="synth\FULL_QAM_TX.hwdef">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="HW_HANDOFF"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+      <File Name="sim\FULL_QAM_TX.protoinst">
+        <Properties IsEditable="false" IsVisible="true" IsNetlistSimulation="false" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+        <ProcessingOrder Val="NORMAL"/>
+      </File>
+    </FileCollection>
+    <BlockContainerCollection>
+      <BlockContainer InstPath="/CLOCKS_0" IsPR="false" State="Generated">
+        <ActiveVariantSynth FileName="bd\CLOCKS_inst_0\CLOCKS_inst_0.bd"/>
+        <ActiveVariantSim FileName="bd\CLOCKS_inst_0\CLOCKS_inst_0.bd"/>
+        <VariantsCollection>
+          <BDFile BDFilePath="bd\CLOCKS_inst_0\CLOCKS_inst_0.bd" BDFileset="CLOCKS_inst_0" BDSourceFile="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\bd\CLOCKS\CLOCKS.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+        </VariantsCollection>
+      </BlockContainer>
+      <BlockContainer InstPath="/DDS_MULT_ADDER_0" IsPR="false" State="Generated">
+        <ActiveVariantSynth FileName="bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd"/>
+        <ActiveVariantSim FileName="bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd"/>
+        <VariantsCollection>
+          <BDFile BDFilePath="bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd" BDFileset="DDS_MULT_ADDER_inst_0" BDSourceFile="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\bd\DDS_MULT_ADDER\DDS_MULT_ADDER.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+        </VariantsCollection>
+      </BlockContainer>
+      <BlockContainer InstPath="/XADC_FIFO_0" IsPR="false" State="Generated">
+        <ActiveVariantSynth FileName="bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd"/>
+        <ActiveVariantSim FileName="bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd"/>
+        <VariantsCollection>
+          <BDFile BDFilePath="bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd" BDFileset="XADC_FIFO_inst_0" BDSourceFile="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\bd\XADC_FIFO\XADC_FIFO.bd" BDSourceFileset="sources_1" BDVariantType="ALL"/>
+        </VariantsCollection>
+      </BlockContainer>
+    </BlockContainerCollection>
+    <ReferenceCollection>
+      <ModuleReference TargetName="XADC_FIFO" Type="Block Design" SubInstancePath="FULL_QAM_TX_XADC_FIFO_0">
+        <TopFile Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\bd\XADC_FIFO\XADC_FIFO.bd"/>
+        <FileCollection>
+          <File Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\bd\XADC_FIFO\XADC_FIFO.bd"/>
+        </FileCollection>
+      </ModuleReference>
+      <ModuleReference TargetName="DDS_MULT_ADDER" Type="Block Design" SubInstancePath="FULL_QAM_TX_DDS_MULT_ADDER_0">
+        <TopFile Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\bd\DDS_MULT_ADDER\DDS_MULT_ADDER.bd"/>
+        <FileCollection>
+          <File Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\new\DDS_splitter.vhd"/>
+          <File Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\new\QAM_mapper.vhd"/>
+          <File Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\new\arst_sync.vhd"/>
+          <File Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\bd\DDS_MULT_ADDER\DDS_MULT_ADDER.bd"/>
+        </FileCollection>
+      </ModuleReference>
+      <ModuleReference TargetName="CLOCKS" Type="Block Design" SubInstancePath="FULL_QAM_TX_CLOCKS_0">
+        <TopFile Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\bd\CLOCKS\CLOCKS.bd"/>
+        <FileCollection>
+          <File Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\new\locked_checker.vhd"/>
+          <File Name="..\..\..\..\project_XADC_v2018_4.srcs\sources_1\bd\CLOCKS\CLOCKS.bd"/>
+        </FileCollection>
+      </ModuleReference>
+    </ReferenceCollection>
+  </CompositeFile>
+</Root>

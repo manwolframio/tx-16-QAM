@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"DDS_MULT_ADDER_inst_0": {
+			"proto_instances": {
+			}
+		}
+	}
+}

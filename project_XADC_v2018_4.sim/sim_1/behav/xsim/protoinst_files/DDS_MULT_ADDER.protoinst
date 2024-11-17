@@ -3,24 +3,6 @@
 	"modules": {
 		"DDS_MULT_ADDER": {
 			"proto_instances": {
-				"/dds_compiler_0/M_AXIS_DATA": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "aclk"},
-						"ARESETN": { "actual": "aresetn"},
-						"TDATA": { "actual": "m_axis_data_tdata"},
-						"TVALID": { "actual": "m_axis_data_tvalid"}
-					}
-				},
-				"/dds_compiler_0/M_AXIS_PHASE": {
-					"interface": "xilinx.com:interface:axis:1.0",
-					"ports": {
-						"ACLK": { "actual": "aclk"},
-						"ARESETN": { "actual": "aresetn"},
-						"TDATA": { "actual": "m_axis_phase_tdata"},
-						"TVALID": { "actual": "m_axis_phase_tvalid"}
-					}
-				}
 			}
 		}
 	}

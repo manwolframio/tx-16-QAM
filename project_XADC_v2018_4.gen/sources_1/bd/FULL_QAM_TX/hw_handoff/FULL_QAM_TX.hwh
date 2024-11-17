@@ -1,0 +1,292 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Nov 17 17:17:52 2024" VIVADOVERSION="2021.2">
+
+  <SYSTEMINFO ARCH="virtex7" DEVICE="7vx485t" NAME="FULL_QAM_TX" PACKAGE="ffg1157" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="rst_0" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="CLOCKS_0" PORT="rst"/>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="reset_in_0"/>
+        <CONNECTION INSTANCE="DDS_MULT_ADDER_0" PORT="rst"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="36000000" DIR="I" NAME="clk_in_36MHz_0" SIGIS="clk" SIGNAME="External_Ports_clk_in_36MHz_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="CLOCKS_0" PORT="clk_in_36MHz"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="channel_out_0_0" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_channel_out_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="channel_out_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="eoc_out_0_0" SIGIS="undef" SIGNAME="XADC_FIFO_0_eoc_out_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="eoc_out_0"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="24" NAME="TX_SIGNAL_0" RIGHT="0" SIGIS="data" SIGNAME="DDS_MULT_ADDER_0_TX_SIGNAL">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DDS_MULT_ADDER_0" PORT="TX_SIGNAL"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="11" NAME="fifo_din_0" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_fifo_din_0">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="fifo_din"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="6" NAME="s_drp_0_0_daddr" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_daddr">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="s_drp_0_daddr"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_drp_0_0_den" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_den">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="s_drp_0_den"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="15" NAME="s_drp_0_0_di" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_di">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="s_drp_0_di"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="15" NAME="s_drp_0_0_do" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_do">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="s_drp_0_do"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="s_drp_0_0_drdy" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_drdy">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="s_drp_0_drdy"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="s_drp_0_0_dwe" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_dwe">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="XADC_FIFO_0" PORT="s_drp_0_dwe"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES>
+    <BUSINTERFACE BUSNAME="External_Interface_s_drp_0_0" NAME="s_drp_0_0" TYPE="TARGET">
+      <PORTMAPS>
+        <PORTMAP LOGICAL="DADDR" PHYSICAL="s_drp_0_0_daddr"/>
+        <PORTMAP LOGICAL="DEN" PHYSICAL="s_drp_0_0_den"/>
+        <PORTMAP LOGICAL="DI" PHYSICAL="s_drp_0_0_di"/>
+        <PORTMAP LOGICAL="DO" PHYSICAL="s_drp_0_0_do"/>
+        <PORTMAP LOGICAL="DRDY" PHYSICAL="s_drp_0_0_drdy"/>
+        <PORTMAP LOGICAL="DWE" PHYSICAL="s_drp_0_0_dwe"/>
+      </PORTMAPS>
+    </BUSINTERFACE>
+  </EXTERNALINTERFACES>
+
+  <MODULES>
+    <MODULE BD="CLOCKS_inst_0" BDTYPE="BLOCK_CONTAINER" DRIVERMODE="SUBCORE" FULLNAME="/CLOCKS_0" INSTANCE="CLOCKS_0" IS_ENABLE="1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="ACTIVE_SYNTH_BD" VALUE="CLOCKS.bd"/>
+        <PARAMETER NAME="LOCK_PROPAGATE" VALUE="0"/>
+        <PARAMETER NAME="ACTIVE_SIM_BD" VALUE="CLOCKS.bd"/>
+        <PARAMETER NAME="LIST_SYNTH_BD" VALUE="CLOCKS.bd"/>
+        <PARAMETER NAME="LIST_SIM_BD" VALUE="CLOCKS.bd"/>
+        <PARAMETER NAME="ENABLE_DFX" VALUE="0"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="192000000" DIR="O" NAME="clk_192MHz" SIGIS="clk" SIGNAME="CLOCKS_0_clk_192MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_MULT_ADDER_0" PORT="clk_192MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="52000000" DIR="O" NAME="clk_52MHz" SIGIS="clk" SIGNAME="CLOCKS_0_clk_52MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="XADC_FIFO_0" PORT="clk_52MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="576000000" DIR="O" NAME="clk_576MHz" SIGIS="clk" SIGNAME="CLOCKS_0_clk_576MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_MULT_ADDER_0" PORT="clk_576MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="36000000" DIR="I" NAME="clk_in_36MHz" SIGIS="clk" SIGNAME="External_Ports_clk_in_36MHz_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="clk_in_36MHz_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="locked" SIGIS="undef" SIGNAME="CLOCKS_0_locked">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="XADC_FIFO_0" PORT="locked_clk"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE BD="DDS_MULT_ADDER_inst_0" BDTYPE="BLOCK_CONTAINER" DRIVERMODE="SUBCORE" FULLNAME="/DDS_MULT_ADDER_0" INSTANCE="DDS_MULT_ADDER_0" IS_ENABLE="1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="ACTIVE_SYNTH_BD" VALUE="DDS_MULT_ADDER.bd"/>
+        <PARAMETER NAME="LOCK_PROPAGATE" VALUE="0"/>
+        <PARAMETER NAME="ACTIVE_SIM_BD" VALUE="DDS_MULT_ADDER.bd"/>
+        <PARAMETER NAME="LIST_SYNTH_BD" VALUE="DDS_MULT_ADDER.bd"/>
+        <PARAMETER NAME="LIST_SIM_BD" VALUE="DDS_MULT_ADDER.bd"/>
+        <PARAMETER NAME="ENABLE_DFX" VALUE="0"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="192000000" DIR="I" NAME="clk_192MHz" SIGIS="clk" SIGNAME="CLOCKS_0_clk_192MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLOCKS_0" PORT="clk_192MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="576000000" DIR="I" NAME="clk_576MHz" SIGIS="clk" SIGNAME="CLOCKS_0_clk_576MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLOCKS_0" PORT="clk_576MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="rst" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="11" NAME="data_in" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_fifo_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="XADC_FIFO_0" PORT="fifo_dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="din_valid" SIGIS="undef" SIGNAME="XADC_FIFO_0_rd_en_fifo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="XADC_FIFO_0" PORT="rd_en_fifo"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="24" NAME="TX_SIGNAL" RIGHT="0" SIGIS="data" SIGNAME="DDS_MULT_ADDER_0_TX_SIGNAL">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="TX_SIGNAL_0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE BD="XADC_FIFO_inst_0" BDTYPE="BLOCK_CONTAINER" DRIVERMODE="SUBCORE" FULLNAME="/XADC_FIFO_0" INSTANCE="XADC_FIFO_0" IS_ENABLE="1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="ACTIVE_SYNTH_BD" VALUE="XADC_FIFO.bd"/>
+        <PARAMETER NAME="LOCK_PROPAGATE" VALUE="0"/>
+        <PARAMETER NAME="ACTIVE_SIM_BD" VALUE="XADC_FIFO.bd"/>
+        <PARAMETER NAME="LIST_SYNTH_BD" VALUE="XADC_FIFO.bd"/>
+        <PARAMETER NAME="LIST_SIM_BD" VALUE="XADC_FIFO.bd"/>
+        <PARAMETER NAME="ENABLE_DFX" VALUE="0"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Vp_Vn_0_v_n" SIGIS="undef"/>
+        <PORT DIR="I" NAME="Vp_Vn_0_v_p" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="6" NAME="s_drp_0_daddr" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_daddr">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FULL_QAM_TX_imp" PORT="s_drp_0_0_daddr"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_drp_0_den" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_den">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FULL_QAM_TX_imp" PORT="s_drp_0_0_den"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="15" NAME="s_drp_0_di" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_di">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FULL_QAM_TX_imp" PORT="s_drp_0_0_di"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="15" NAME="s_drp_0_do" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_do">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FULL_QAM_TX_imp" PORT="s_drp_0_0_do"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_drp_0_drdy" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_drdy">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FULL_QAM_TX_imp" PORT="s_drp_0_0_drdy"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="s_drp_0_dwe" SIGIS="undef" SIGNAME="XADC_FIFO_0_s_drp_0_dwe">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FULL_QAM_TX_imp" PORT="s_drp_0_0_dwe"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="alarm_out_0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="busy_out_0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="4" NAME="channel_out_0" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_channel_out_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="channel_out_0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="clk_52MHz" SIGIS="undef" SIGNAME="CLOCKS_0_clk_52MHz">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLOCKS_0" PORT="clk_52MHz"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef"/>
+        <PORT DIR="O" NAME="eoc_out_0" SIGIS="undef" SIGNAME="XADC_FIFO_0_eoc_out_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="eoc_out_0_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="eos_out_0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="11" NAME="fifo_din" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_fifo_din_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="fifo_din_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="11" NAME="fifo_dout" RIGHT="0" SIGIS="undef" SIGNAME="XADC_FIFO_0_fifo_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_MULT_ADDER_0" PORT="data_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="fifo_full" SIGIS="undef"/>
+        <PORT DIR="O" NAME="locked" SIGIS="undef"/>
+        <PORT DIR="I" NAME="locked_clk" SIGIS="undef" SIGNAME="CLOCKS_0_locked">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="CLOCKS_0" PORT="locked"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ot_out_0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="rd_data_count_0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="rd_en_fifo" SIGIS="undef" SIGNAME="XADC_FIFO_0_rd_en_fifo">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DDS_MULT_ADDER_0" PORT="din_valid"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset_in_0" POLARITY="ACTIVE_HIGH" SIGIS="rst" SIGNAME="External_Ports_rst_0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="rst_0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="user_temp_alarm_out_0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="vccaux_alarm_out_0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="vccint_alarm_out_0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="wr_clk" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="7" NAME="wr_data_count_0" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" NAME="wr_rst_busy_0" SIGIS="undef"/>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="Vp_Vn_0" TYPE="TARGET" VLNV="xilinx.com:interface:diff_analog_io:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="V_N" PHYSICAL="Vp_Vn_0_v_n"/>
+            <PORTMAP LOGICAL="V_P" PHYSICAL="Vp_Vn_0_v_p"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="External_Interface_s_drp_0_0" NAME="s_drp_0" TYPE="TARGET" VLNV="xilinx.com:interface:drp:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="DADDR" PHYSICAL="s_drp_0_daddr"/>
+            <PORTMAP LOGICAL="DEN" PHYSICAL="s_drp_0_den"/>
+            <PORTMAP LOGICAL="DI" PHYSICAL="s_drp_0_di"/>
+            <PORTMAP LOGICAL="DO" PHYSICAL="s_drp_0_do"/>
+            <PORTMAP LOGICAL="DRDY" PHYSICAL="s_drp_0_drdy"/>
+            <PORTMAP LOGICAL="DWE" PHYSICAL="s_drp_0_dwe"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

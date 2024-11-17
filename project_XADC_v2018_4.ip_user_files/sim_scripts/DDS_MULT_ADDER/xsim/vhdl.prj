@@ -1,5 +1,13 @@
 vhdl xil_defaultlib  \
 "../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_dds_compiler_0_0/sim/DDS_MULT_ADDER_dds_compiler_0_0.vhd" \
+"../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_fir_compiler_0_0/sim/DDS_MULT_ADDER_fir_compiler_0_0.vhd" \
+"../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_fir_compiler_0_1/sim/DDS_MULT_ADDER_fir_compiler_0_1.vhd" \
+"../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_DDS_splitter_0_0/sim/DDS_MULT_ADDER_DDS_splitter_0_0.vhd" \
+"../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_mult_gen_0_0/sim/DDS_MULT_ADDER_mult_gen_0_0.vhd" \
+"../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_mult_gen_0_1/sim/DDS_MULT_ADDER_mult_gen_0_1.vhd" \
+"../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_c_addsub_0_0/sim/DDS_MULT_ADDER_c_addsub_0_0.vhd" \
+"../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_QAM_mapper_0_0/sim/DDS_MULT_ADDER_QAM_mapper_0_0.vhd" \
+"../../../bd/DDS_MULT_ADDER/ip/DDS_MULT_ADDER_arst_sinc_0_0/sim/DDS_MULT_ADDER_arst_sinc_0_0.vhd" \
 "../../../bd/DDS_MULT_ADDER/sim/DDS_MULT_ADDER.vhd" \
 
 nosort

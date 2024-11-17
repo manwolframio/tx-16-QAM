@@ -1,0 +1,120 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Nov 17 16:51:03 2024
+# Process ID: 11528
+# Current directory: C:/Users/nicol/Documents/GitHub/tx-16-QAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9368 C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.xpr
+# Log file: C:/Users/nicol/Documents/GitHub/tx-16-QAM/vivado.log
+# Journal file: C:/Users/nicol/Documents/GitHub/tx-16-QAM\vivado.jou
+# Running On: workstation, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 16, Host memory: 34307 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.xpr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nicol/Documents/GitHub/tx-16-QAM/IP_RESET'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nicol/Documents/GitHub/tx-16-QAM/IP_CONTADOR52'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nicol/Documents/GitHub/tx-16-QAM/IP_CONTADOR26'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nicol/Documents/GitHub/tx-16-QAM/IP_FSM_FIFO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 1384.457 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd}
+Reading block design file <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd>...
+Adding Block Design Container - CLOCKS_0
+Adding Block Design Container - DDS_MULT_ADDER_0
+Adding Block Design Container - XADC_FIFO_0
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+Successfully read diagram <FULL_QAM_TX> from block design file <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd>
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+make_wrapper -files [get_files C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd] -top
+INFO: [BD 41-1662] The design 'FULL_QAM_TX.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\CLOCKS_inst_0\CLOCKS_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.srcs\sources_1\bd\FULL_QAM_TX\FULL_QAM_TX.bd> 
+Wrote  : <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/ui/bd_25d0356.ui> 
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/synth/FULL_QAM_TX.vhd
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/sim/FULL_QAM_TX.vhd
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\CLOCKS_inst_0\CLOCKS_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd> 
+add_files -norecurse c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+open_bd_design {C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/XADC_FIFO/XADC_FIFO.bd}
+Reading block design file <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/XADC_FIFO/XADC_FIFO.bd>...
+Adding component instance block -- xilinx.com:user:Contador_26:1.0 - Contador_26_0
+Adding component instance block -- xilinx.com:user:Contador_52:1.0 - Contador_52_0
+Adding component instance block -- xilinx.com:user:FSM_FIFO_Entregable:1.0 - FSM_FIFO_Entregable_0
+Adding component instance block -- xilinx.com:ip:fifo_generator:13.2 - fifo_generator_0
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+Adding component instance block -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Successfully read diagram <XADC_FIFO> from block design file <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/XADC_FIFO/XADC_FIFO.bd>
+open_bd_design {C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd}
+startgroup
+make_bd_pins_external  [get_bd_pins XADC_FIFO_0/fifo_din]
+endgroup
+save_bd_design
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\CLOCKS_inst_0\CLOCKS_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.srcs\sources_1\bd\FULL_QAM_TX\FULL_QAM_TX.bd> 
+Wrote  : <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/ui/bd_25d0356.ui> 
+export_ip_user_files -of_objects  [get_files c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+file delete -force c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+update_compile_order -fileset sources_1
+make_wrapper -files [get_files C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd] -top
+WARNING: [BD 41-2121] Port clk_192MHz associated reset port aresetn does not exist
+WARNING: [BD 41-2121] Port clk_192MHz associated reset port rst_0 does not exist
+CRITICAL WARNING: [BD 41-1348] Reset pin /DDS_MULT_ADDER_0/QAM_mapper_0/rst (associated clock /DDS_MULT_ADDER_0/QAM_mapper_0/clk) is connected to asynchronous reset source /rst_0.
+This may prevent design from meeting timing. Please add Processor System Reset module to create a reset that is synchronous to the associated clock source /CLOCKS_0/clk_wiz_1/clk_out1.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /CLOCKS_0/clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /CLOCKS_0/clk_wiz_0 clk_wiz propagate
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /DDS_MULT_ADDER_0/c_addsub_0 A_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:c_addsub:12.0-913] /DDS_MULT_ADDER_0/c_addsub_0 B_Width has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /DDS_MULT_ADDER_0/I_mult PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /DDS_MULT_ADDER_0/I_mult PortBWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /DDS_MULT_ADDER_0/Q_mult PortAWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+INFO: [xilinx.com:ip:mult_gen:12.0-913] /DDS_MULT_ADDER_0/Q_mult PortBWidth has been set to manual on the GUI. It will not be updated during validation with a propagated value.
+WARNING: [BD 41-927] Following properties on pin /XADC_FIFO_0/xadc_wiz_0/dclk_in have been updated from connected ip, but BD cell '/XADC_FIFO_0/xadc_wiz_0' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 52000000 
+Please resolve any mismatches by directly setting properties on BD cell </XADC_FIFO_0/xadc_wiz_0> to completely resolve these warnings.
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\CLOCKS_inst_0\CLOCKS_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.srcs\sources_1\bd\FULL_QAM_TX\FULL_QAM_TX.bd> 
+Wrote  : <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/ui/bd_25d0356.ui> 
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/synth/FULL_QAM_TX.vhd
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/sim/FULL_QAM_TX.vhd
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\CLOCKS_inst_0\CLOCKS_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd> 
+add_files -norecurse c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd] -no_script -reset -force -quiet
+remove_files  c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+file delete -force c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 17 17:11:46 2024...

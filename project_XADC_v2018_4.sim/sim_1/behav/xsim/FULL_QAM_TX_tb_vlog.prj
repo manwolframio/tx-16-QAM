@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/CLOCKS_inst_0/ipshared/62b6" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/ip/CLOCKS_inst_0_clk_wiz_0_0/CLOCKS_inst_0_clk_wiz_0_0_clk_wiz.v" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/ip/CLOCKS_inst_0_clk_wiz_0_0/CLOCKS_inst_0_clk_wiz_0_0.v" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/ip/CLOCKS_inst_0_clk_wiz_1_0/CLOCKS_inst_0_clk_wiz_1_0_clk_wiz.v" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/ip/CLOCKS_inst_0_clk_wiz_1_0/CLOCKS_inst_0_clk_wiz_1_0.v" \
+"../../../../project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_fifo_generator_0_0/sim/XADC_FIFO_inst_0_fifo_generator_0_0.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Nov 17 02:00:07 2024
+# Process ID: 2784
+# Current directory: C:/Users/nicol/Documents/GitHub/tx-16-QAM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12128 C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.xpr
+# Log file: C:/Users/nicol/Documents/GitHub/tx-16-QAM/vivado.log
+# Journal file: C:/Users/nicol/Documents/GitHub/tx-16-QAM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.xpr
+open_project C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.xpr

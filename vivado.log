@@ -1,34 +1,453 @@
 #-----------------------------------------------------------
-# Vivado v2017.4 (64-bit)
-# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
-# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
-# Start of session at: Sun Nov 17 02:00:07 2024
-# Process ID: 2784
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Sun Nov 17 17:11:48 2024
+# Process ID: 14344
 # Current directory: C:/Users/nicol/Documents/GitHub/tx-16-QAM
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12128 C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18056 C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.xpr
 # Log file: C:/Users/nicol/Documents/GitHub/tx-16-QAM/vivado.log
 # Journal file: C:/Users/nicol/Documents/GitHub/tx-16-QAM\vivado.jou
+# Running On: workstation, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 16, Host memory: 34307 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.xpr
-ERROR: [BD 41-1809] Block design name '' found in BD file does not match with actual file name 'DDS_MULT_ADDER.bd'. BD file on disk must be named '.bd'
-CRITICAL WARNING: [Project 1-19] Could not find the file '$PGENDIR/sources_1/bd/DDS_MULT_ADDER/hdl/DDS_MULT_ADDER_wrapper.vhd'.
-ERROR: [BD 41-1809] Block design name '' found in BD file does not match with actual file name 'XADC_FIFO.bd'. BD file on disk must be named '.bd'
-ERROR: [BD 41-1809] Block design name '' found in BD file does not match with actual file name 'CLOCKS.bd'. BD file on disk must be named '.bd'
-CRITICAL WARNING: [Project 1-19] Could not find the file '$PGENDIR/sources_1/bd/CLOCKS/hdl/CLOCKS_wrapper.vhd'.
-CRITICAL WARNING: [Project 1-19] Could not find the file '$PGENDIR/sources_1/bd/XADC_FIFO/hdl/XADC_FIFO_wrapper.vhd'.
-ERROR: [Project 1-208] No val for DA Elab Attr
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/es/1.3/board.xml as part xcvc1902-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_es:part0:1.3 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/es/1.3/board.xml as part xcvm1802-vsva2197-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.0/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.1/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208/es/1.2/board.xml as part xczu48dr-fsvg1517-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/es/1.0/board.xml as part xczu58dr-fsvg1517-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.0/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.1 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.1/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216_es:part0:1.2 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216/es/1.2/board.xml as part xczu49dr-ffvf1760-2-e-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld_es:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/es/1.0/board.xml as part xczu59dr-ffvf1760-2-i-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:1.0 available at C:/Xilinx/Vivado/2021.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/1.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 Scanning sources...
-ERROR: [Common 17-70] Application Exception: SrcMgr::createSS : type not set
-open_project C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.xpr
-ERROR: [BD 41-1809] Block design name '' found in BD file does not match with actual file name 'DDS_MULT_ADDER.bd'. BD file on disk must be named '.bd'
-CRITICAL WARNING: [Project 1-19] Could not find the file '$PGENDIR/sources_1/bd/DDS_MULT_ADDER/hdl/DDS_MULT_ADDER_wrapper.vhd'.
-ERROR: [BD 41-1809] Block design name '' found in BD file does not match with actual file name 'XADC_FIFO.bd'. BD file on disk must be named '.bd'
-ERROR: [BD 41-1809] Block design name '' found in BD file does not match with actual file name 'CLOCKS.bd'. BD file on disk must be named '.bd'
-CRITICAL WARNING: [Project 1-19] Could not find the file '$PGENDIR/sources_1/bd/CLOCKS/hdl/CLOCKS_wrapper.vhd'.
-CRITICAL WARNING: [Project 1-19] Could not find the file '$PGENDIR/sources_1/bd/XADC_FIFO/hdl/XADC_FIFO_wrapper.vhd'.
-ERROR: [Project 1-208] No val for DA Elab Attr
-Scanning sources...
-ERROR: [Common 17-70] Application Exception: SrcMgr::createSS : type not set
-exit
-INFO: [Common 17-206] Exiting Vivado at Sun Nov 17 02:03:06 2024...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nicol/Documents/GitHub/tx-16-QAM/IP_RESET'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nicol/Documents/GitHub/tx-16-QAM/IP_CONTADOR52'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nicol/Documents/GitHub/tx-16-QAM/IP_CONTADOR26'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/nicol/Documents/GitHub/tx-16-QAM/IP_FSM_FIFO'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:07 . Memory (MB): peak = 1384.512 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd}
+Reading block design file <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd>...
+Adding Block Design Container - CLOCKS_0
+Adding Block Design Container - DDS_MULT_ADDER_0
+Adding Block Design Container - XADC_FIFO_0
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+Successfully read diagram <FULL_QAM_TX> from block design file <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd>
+INFO: [xilinx.com:ip:fifo_generator:13.2-5968] /fifo_generator_0Executing the post_config_ip from bd
+make_wrapper -files [get_files C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd] -top
+INFO: [BD 41-1662] The design 'FULL_QAM_TX.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\CLOCKS_inst_0\CLOCKS_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.srcs\sources_1\bd\FULL_QAM_TX\FULL_QAM_TX.bd> 
+Wrote  : <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/ui/bd_25d0356.ui> 
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/synth/FULL_QAM_TX.vhd
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/sim/FULL_QAM_TX.vhd
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\CLOCKS_inst_0\CLOCKS_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd> 
+add_files -norecurse c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+generate_target Simulation [get_files C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd]
+INFO: [BD 41-1662] The design 'FULL_QAM_TX.bd' is already validated. Therefore parameter propagation will not be re-run.
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\CLOCKS_inst_0\CLOCKS_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.srcs\sources_1\bd\FULL_QAM_TX\FULL_QAM_TX.bd> 
+Wrote  : <C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/ui/bd_25d0356.ui> 
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/synth/FULL_QAM_TX.vhd
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/sim/FULL_QAM_TX.vhd
+VHDL Output written to : c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\CLOCKS_inst_0\CLOCKS_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\DDS_MULT_ADDER_inst_0\DDS_MULT_ADDER_inst_0.bd> 
+Wrote  : <C:\Users\nicol\Documents\GitHub\tx-16-QAM\project_XADC_v2018_4.gen\sources_1\bd\FULL_QAM_TX\bd\XADC_FIFO_inst_0\XADC_FIFO_inst_0.bd> 
+INFO: [BD 41-1662] The design 'CLOCKS_inst_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/CLOCKS_inst_0/synth/CLOCKS_inst_0.vhd
+VHDL Output written to : C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/CLOCKS_inst_0/sim/CLOCKS_inst_0.vhd
+VHDL Output written to : C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/CLOCKS_inst_0/hdl/CLOCKS_inst_0_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block locked_checker_0 .
+Exporting to file C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/CLOCKS_inst_0/hw_handoff/CLOCKS_inst_0.hwh
+Generated Hardware Definition File C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/CLOCKS_inst_0/synth/CLOCKS_inst_0.hwdef
+INFO: [BD 41-1662] The design 'DDS_MULT_ADDER_inst_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/I_mult/A'(16) to pin '/I_RRC/m_axis_data_tdata'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/I_RRC/s_axis_data_tdata'(16) to pin '/QAM_mapper_0/data_out_i'(3) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/Q_RRC/s_axis_data_tdata'(16) to pin '/QAM_mapper_0/data_out_q'(3) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/Q_mult/A'(16) to pin '/Q_RRC/m_axis_data_tdata'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/DDS_MULT_ADDER_inst_0/synth/DDS_MULT_ADDER_inst_0.vhd
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/I_mult/A'(16) to pin '/I_RRC/m_axis_data_tdata'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/I_RRC/s_axis_data_tdata'(16) to pin '/QAM_mapper_0/data_out_i'(3) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/Q_RRC/s_axis_data_tdata'(16) to pin '/QAM_mapper_0/data_out_q'(3) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+CRITICAL WARNING: [BD 41-2383] Width mismatch when connecting input pin '/Q_mult/A'(16) to pin '/Q_RRC/m_axis_data_tdata'(24) - Only lower order bits will be connected, and other input bits of this pin will be left unconnected.
+VHDL Output written to : C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/DDS_MULT_ADDER_inst_0/sim/DDS_MULT_ADDER_inst_0.vhd
+VHDL Output written to : C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/DDS_MULT_ADDER_inst_0/hdl/DDS_MULT_ADDER_inst_0_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dds_compiler_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Q_RRC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block I_RRC .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block DDS_splitter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Q_mult .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block I_mult .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block c_addsub_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block QAM_mapper_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block arst_sinc_0 .
+Exporting to file C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/DDS_MULT_ADDER_inst_0/hw_handoff/DDS_MULT_ADDER_inst_0.hwh
+Generated Hardware Definition File C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/DDS_MULT_ADDER_inst_0/synth/DDS_MULT_ADDER_inst_0.hwdef
+INFO: [BD 41-1662] The design 'XADC_FIFO_inst_0.bd' is already validated. Therefore parameter propagation will not be re-run.
+VHDL Output written to : C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/XADC_FIFO_inst_0/synth/XADC_FIFO_inst_0.vhd
+VHDL Output written to : C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/XADC_FIFO_inst_0/sim/XADC_FIFO_inst_0.vhd
+VHDL Output written to : C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/XADC_FIFO_inst_0/hdl/XADC_FIFO_inst_0_wrapper.vhd
+INFO: [Device 21-403] Loading part xc7vx485tffg1157-1
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Contador_26_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Contador_52_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block FSM_FIFO_Entregable_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block fifo_generator_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+Exporting to file C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/XADC_FIFO_inst_0/hw_handoff/XADC_FIFO_inst_0.hwh
+Generated Hardware Definition File C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/XADC_FIFO_inst_0/synth/XADC_FIFO_inst_0.hwdef
+Exporting to file c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hw_handoff/FULL_QAM_TX.hwh
+Generated Hardware Definition File c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/synth/FULL_QAM_TX.hwdef
+generate_target: Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1841.066 ; gain = 298.621
+export_ip_user_files -of_objects [get_files C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sources_1/bd/FULL_QAM_TX/FULL_QAM_TX.bd] -directory C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files -ipstatic_source_dir C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.cache/compile_simlib/modelsim} {questa=C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.cache/compile_simlib/questa} {riviera=C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.cache/compile_simlib/riviera} {activehdl=C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'FULL_QAM_TX_tb'
+WARNING: [Vivado 12-12986] Compiled library path does not exist: ''
+INFO: [Runs 36-567] Checking/generating simulation output products for IPs/BDs (if any)...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim'
+CRITICAL WARNING: [filemgmt 20-1741] File 'design_1_xadc_wiz_0_0.vhd' is used by one or more modules, but with different contents, and may lead to unpredictable results:
+* design_1_xadc_wiz_0_0 (c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_Contador_26_0_0/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd)
+* design_1_xadc_wiz_0_0 (c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_Contador_52_0_0/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd)
+* design_1_xadc_wiz_0_0 (c:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_FSM_FIFO_Entregable_0_0/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd)
+Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2021.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2021.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'FULL_QAM_TX_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim/DDS_MULT_ADDER_fir_compiler_0_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim/DDS_MULT_ADDER_fir_compiler_0_1.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim/DDS_MULT_ADDER_inst_0_I_RRC_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim/DDS_MULT_ADDER_inst_0_Q_RRC_0.mif'
+INFO: [SIM-utils-43] Exported 'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim/design.txt'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj FULL_QAM_TX_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/ip/CLOCKS_inst_0_clk_wiz_0_0/CLOCKS_inst_0_clk_wiz_0_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLOCKS_inst_0_clk_wiz_0_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/ip/CLOCKS_inst_0_clk_wiz_0_0/CLOCKS_inst_0_clk_wiz_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLOCKS_inst_0_clk_wiz_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/ip/CLOCKS_inst_0_clk_wiz_1_0/CLOCKS_inst_0_clk_wiz_1_0_clk_wiz.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLOCKS_inst_0_clk_wiz_1_0_clk_wiz
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/ip/CLOCKS_inst_0_clk_wiz_1_0/CLOCKS_inst_0_clk_wiz_1_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CLOCKS_inst_0_clk_wiz_1_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_fifo_generator_0_0/sim/XADC_FIFO_inst_0_fifo_generator_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module XADC_FIFO_inst_0_fifo_generator_0_0
+"xvhdl --incr --relax -prj FULL_QAM_TX_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/ip/CLOCKS_inst_0_locked_checker_0_0/sim/CLOCKS_inst_0_locked_checker_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLOCKS_inst_0_locked_checker_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/CLOCKS_inst_0/sim/CLOCKS_inst_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'CLOCKS_inst_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/ip/DDS_MULT_ADDER_inst_0_dds_compiler_0_0/sim/DDS_MULT_ADDER_inst_0_dds_compiler_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0_dds_compiler_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/ip/DDS_MULT_ADDER_inst_0_Q_RRC_0/sim/DDS_MULT_ADDER_inst_0_Q_RRC_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0_Q_RRC_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/ip/DDS_MULT_ADDER_inst_0_I_RRC_0/sim/DDS_MULT_ADDER_inst_0_I_RRC_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0_I_RRC_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/ip/DDS_MULT_ADDER_inst_0_DDS_splitter_0/sim/DDS_MULT_ADDER_inst_0_DDS_splitter_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0_DDS_splitter_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/ip/DDS_MULT_ADDER_inst_0_Q_mult_0/sim/DDS_MULT_ADDER_inst_0_Q_mult_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0_Q_mult_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/ip/DDS_MULT_ADDER_inst_0_I_mult_0/sim/DDS_MULT_ADDER_inst_0_I_mult_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0_I_mult_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/ip/DDS_MULT_ADDER_inst_0_c_addsub_0_0/sim/DDS_MULT_ADDER_inst_0_c_addsub_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0_c_addsub_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/ip/DDS_MULT_ADDER_inst_0_QAM_mapper_0_0/sim/DDS_MULT_ADDER_inst_0_QAM_mapper_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0_QAM_mapper_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/ip/DDS_MULT_ADDER_inst_0_arst_sinc_0_0/sim/DDS_MULT_ADDER_inst_0_arst_sinc_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0_arst_sinc_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/DDS_MULT_ADDER_inst_0/sim/DDS_MULT_ADDER_inst_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DDS_MULT_ADDER_inst_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_Contador_26_0_0/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xadc_wiz_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ipshared/cbd3/src/Contador_26.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contador_26'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_Contador_26_0_0/sim/XADC_FIFO_inst_0_Contador_26_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_inst_0_Contador_26_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ipshared/db9d/src/Contador_52.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Contador_52'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_Contador_52_0_0/sim/XADC_FIFO_inst_0_Contador_52_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_inst_0_Contador_52_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_FSM_FIFO_Entregable_0_0/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'design_1_xadc_wiz_0_0'
+WARNING: [VRFC 10-3608] overwriting existing secondary unit 'xilinx' [C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_FSM_FIFO_Entregable_0_0/src/design_1_xadc_wiz_0_0/design_1_xadc_wiz_0_0.vhd:80]
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ipshared/0ffb/src/FSM_FIFO_Entregable.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FSM_FIFO_Entregable'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_FSM_FIFO_Entregable_0_0/sim/XADC_FIFO_inst_0_FSM_FIFO_Entregable_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_inst_0_FSM_FIFO_Entregable_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/ip/XADC_FIFO_inst_0_xadc_wiz_0_0/XADC_FIFO_inst_0_xadc_wiz_0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_inst_0_xadc_wiz_0_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/XADC_FIFO_inst_0/sim/XADC_FIFO_inst_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'XADC_FIFO_inst_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.ip_user_files/bd/FULL_QAM_TX/sim/FULL_QAM_TX.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FULL_QAM_TX'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX/hdl/FULL_QAM_TX_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FULL_QAM_TX_wrapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.srcs/sim_1/new/FULL_QAM_TX_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'FULL_QAM_TX_tb'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1861.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_17 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_21 -L fir_compiler_v7_2_17 -L c_reg_fd_v12_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L fifo_generator_v13_2_6 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FULL_QAM_TX_tb_behav xil_defaultlib.FULL_QAM_TX_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2021.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_17 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_21 -L fir_compiler_v7_2_17 -L c_reg_fd_v12_0_6 -L xbip_addsub_v3_0_6 -L c_addsub_v12_0_14 -L fifo_generator_v13_2_6 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FULL_QAM_TX_tb_behav xil_defaultlib.FULL_QAM_TX_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package fir_compiler_v7_2_17.fir_compiler_v7_2_17_viv_comp
+Compiling package ieee.std_logic_textio
+Compiling package fir_compiler_v7_2_17.globals_pkg
+Compiling package fir_compiler_v7_2_17.components
+Compiling package ieee.math_real
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package ieee.std_logic_signed
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package mult_gen_v12_0_17.mult_gen_v12_0_17_viv_comp
+Compiling package mult_gen_v12_0_17.mult_gen_v12_0_17_pkg
+Compiling package mult_gen_v12_0_17.dsp_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_viv_comp
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv_comp
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg
+Compiling package c_addsub_v12_0_14.c_addsub_v12_0_14_pkg_legacy
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv_com...
+Compiling package xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_pkg
+Compiling package xbip_dsp48_wrapper_v3_0_4.xbip_dsp48_wrapper_v3_0_4_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_21.dds_compiler_v6_0_21_viv_comp
+Compiling package dds_compiler_v6_0_21.pkg_dds_compiler_v6_0_21
+Compiling package dds_compiler_v6_0_21.dds_compiler_v6_0_21_hdl_comps
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package dds_compiler_v6_0_21.pkg_betas
+Compiling package dds_compiler_v6_0_21.pkg_alphas
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=27.62...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.CLOCKS_inst_0_clk_wiz_0_0_clk_wi...
+Compiling module xil_defaultlib.CLOCKS_inst_0_clk_wiz_0_0
+Compiling module unisims_ver.MMCME2_ADV(CLKFBOUT_MULT_F=32.0,...
+Compiling module xil_defaultlib.CLOCKS_inst_0_clk_wiz_1_0_clk_wi...
+Compiling module xil_defaultlib.CLOCKS_inst_0_clk_wiz_1_0
+Compiling architecture rtl of entity xil_defaultlib.locked_checker [locked_checker_default]
+Compiling architecture clocks_inst_0_locked_checker_0_0_arch of entity xil_defaultlib.CLOCKS_inst_0_locked_checker_0_0 [clocks_inst_0_locked_checker_0_0...]
+Compiling architecture structure of entity xil_defaultlib.CLOCKS_inst_0 [clocks_inst_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DDS_splitter [dds_splitter_default]
+Compiling architecture dds_mult_adder_inst_0_dds_splitter_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_DDS_splitter_0 [dds_mult_adder_inst_0_dds_splitt...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_srl_fifo [\glb_srl_fifo(width=16,has_ifx=t...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_ifx_slave [\glb_ifx_slave(width=16,has_ifx=...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.sp_mem [\sp_mem(c_xdevicefamily="virtex7...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.filt_mem [\filt_mem(c_xdevicefamily="virte...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.buff [\buff(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(mask="11111111111111111...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.calc [\calc(c_xdevicefamily="virtex7",...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.addsub_mult_accum [\addsub_mult_accum(c_xdevicefami...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.delay [\delay(c_delay_len=6,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.single_rate [\single_rate(c_xdevicefamily="vi...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.fir_compiler_v7_2_17_viv [\fir_compiler_v7_2_17_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_17.fir_compiler_v7_2_17 [\fir_compiler_v7_2_17(c_xdevicef...]
+Compiling architecture dds_mult_adder_inst_0_i_rrc_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_I_RRC_0 [dds_mult_adder_inst_0_i_rrc_0_de...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.delay_line [\delay_line(c_xdevicefamily="vir...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.op_resize [\op_resize(bi_width=8,ao_width=2...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.dsp [\dsp(c_xdevicefamily="virtex7",c...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.mult_gen_v12_0_17_viv [\mult_gen_v12_0_17_viv(c_verbosi...]
+Compiling architecture xilinx of entity mult_gen_v12_0_17.mult_gen_v12_0_17 [\mult_gen_v12_0_17(c_a_width=16,...]
+Compiling architecture dds_mult_adder_inst_0_i_mult_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_I_mult_0 [dds_mult_adder_inst_0_i_mult_0_d...]
+Compiling architecture behavioral of entity xil_defaultlib.QAM_mapper [qam_mapper_default]
+Compiling architecture dds_mult_adder_inst_0_qam_mapper_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_QAM_mapper_0_0 [dds_mult_adder_inst_0_qam_mapper...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.single_rate [\single_rate(c_xdevicefamily="vi...]
+Compiling architecture synth of entity fir_compiler_v7_2_17.fir_compiler_v7_2_17_viv [\fir_compiler_v7_2_17_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_17.fir_compiler_v7_2_17 [\fir_compiler_v7_2_17(c_xdevicef...]
+Compiling architecture dds_mult_adder_inst_0_q_rrc_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_Q_RRC_0 [dds_mult_adder_inst_0_q_rrc_0_de...]
+Compiling architecture dds_mult_adder_inst_0_q_mult_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_Q_mult_0 [dds_mult_adder_inst_0_q_mult_0_d...]
+Compiling architecture behavioral of entity xil_defaultlib.arst_sinc [arst_sinc_default]
+Compiling architecture dds_mult_adder_inst_0_arst_sinc_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_arst_sinc_0_0 [dds_mult_adder_inst_0_arst_sinc_...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture synth of entity xbip_dsp48_wrapper_v3_0_4.xbip_dsp48e1_wrapper_v3_0 [\xbip_dsp48e1_wrapper_v3_0(preg=...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_synth [\xbip_dsp48_addsub_synth(c_xdevi...]
+Compiling architecture synth of entity xbip_dsp48_addsub_v3_0_6.xbip_dsp48_addsub_v3_0_6_viv [\xbip_dsp48_addsub_v3_0_6_viv(c_...]
+Compiling architecture synth of entity xbip_addsub_v3_0_6.xbip_addsub_v3_0_6_viv [\xbip_addsub_v3_0_6_viv(c_xdevic...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity c_addsub_v12_0_14.c_addsub_v12_0_14_viv [\c_addsub_v12_0_14_viv(c_xdevice...]
+Compiling architecture xilinx of entity c_addsub_v12_0_14.c_addsub_v12_0_14 [\c_addsub_v12_0_14(c_xdevicefami...]
+Compiling architecture dds_mult_adder_inst_0_c_addsub_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_c_addsub_0_0 [dds_mult_adder_inst_0_c_addsub_0...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_rdy [\dds_compiler_v6_0_21_rdy(c_has_...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.pipe_add [\pipe_add(c_width=24,c_num_segs=...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.accum [\accum(c_xdevicefamily="virtex7"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.sin_cos [\sin_cos(c_addr_width=8,c_data_w...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_core [\dds_compiler_v6_0_21_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21_viv [\dds_compiler_v6_0_21_viv(c_accu...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_21.dds_compiler_v6_0_21 [\dds_compiler_v6_0_21(c_accumula...]
+Compiling architecture dds_mult_adder_inst_0_dds_compiler_0_0_arch of entity xil_defaultlib.DDS_MULT_ADDER_inst_0_dds_compiler_0_0 [dds_mult_adder_inst_0_dds_compil...]
+Compiling architecture structure of entity xil_defaultlib.DDS_MULT_ADDER_inst_0 [dds_mult_adder_inst_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_26 [contador_26_default]
+Compiling architecture xadc_fifo_inst_0_contador_26_0_0_arch of entity xil_defaultlib.XADC_FIFO_inst_0_Contador_26_0_0 [xadc_fifo_inst_0_contador_26_0_0...]
+Compiling architecture behavioral of entity xil_defaultlib.Contador_52 [contador_52_default]
+Compiling architecture xadc_fifo_inst_0_contador_52_0_0_arch of entity xil_defaultlib.XADC_FIFO_inst_0_Contador_52_0_0 [xadc_fifo_inst_0_contador_52_0_0...]
+Compiling architecture behavioral of entity xil_defaultlib.FSM_FIFO_Entregable [fsm_fifo_entregable_default]
+Compiling architecture xadc_fifo_inst_0_fsm_fifo_entregable_0_0_arch of entity xil_defaultlib.XADC_FIFO_inst_0_FSM_FIFO_Entregable_0_0 [xadc_fifo_inst_0_fsm_fifo_entreg...]
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_sync_stag...
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_bhv_ver_a...
+Compiling module fifo_generator_v13_2_6.fifo_generator_v13_2_6_CONV_VER(...
+Compiling module fifo_generator_v13_2_6.fifo_generator_vlog_beh(C_DATA_C...
+Compiling module xil_defaultlib.XADC_FIFO_inst_0_fifo_generator_...
+Compiling architecture xadc_v of entity unisim.XADC [\XADC(init_40="0000000000000011"...]
+Compiling architecture xilinx of entity xil_defaultlib.XADC_FIFO_inst_0_xadc_wiz_0_0 [xadc_fifo_inst_0_xadc_wiz_0_0_de...]
+Compiling architecture structure of entity xil_defaultlib.XADC_FIFO_inst_0 [xadc_fifo_inst_0_default]
+Compiling architecture structure of entity xil_defaultlib.FULL_QAM_TX [full_qam_tx_default]
+Compiling architecture structure of entity xil_defaultlib.FULL_QAM_TX_wrapper [full_qam_tx_wrapper_default]
+Compiling architecture tb of entity xil_defaultlib.full_qam_tx_tb
+Built simulation snapshot FULL_QAM_TX_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 1861.004 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '17' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/nicol/Documents/GitHub/tx-16-QAM/project_XADC_v2018_4.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "FULL_QAM_TX_tb_behav -key {Behavioral:sim_1:Functional:FULL_QAM_TX_tb} -tclbatch {FULL_QAM_TX_tb.tcl} -protoinst "protoinst_files/FULL_QAM_TX.protoinst" -protoinst "protoinst_files/XADC_FIFO.protoinst" -protoinst "protoinst_files/DDS_MULT_ADDER.protoinst" -protoinst "protoinst_files/CLOCKS.protoinst" -protoinst "protoinst_files/CLOCKS_inst_0.protoinst" -protoinst "protoinst_files/DDS_MULT_ADDER_inst_0.protoinst" -protoinst "protoinst_files/XADC_FIFO_inst_0.protoinst" -view {C:/Users/nicol/Documents/GitHub/tx-16-QAM/prueba_xadc_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/FULL_QAM_TX.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/XADC_FIFO.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/XADC_FIFO.protoinst for the following reason(s):
+There are no instances of module "XADC_FIFO" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/DDS_MULT_ADDER.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/DDS_MULT_ADDER.protoinst for the following reason(s):
+There are no instances of module "DDS_MULT_ADDER" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CLOCKS.protoinst
+WARNING: [Wavedata 42-558] Couldn't load one or more protocol instances from protoinst file protoinst_files/CLOCKS.protoinst for the following reason(s):
+There are no instances of module "CLOCKS" in the design.
+
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/CLOCKS_inst_0.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/DDS_MULT_ADDER_inst_0.protoinst
+INFO: [Wavedata 42-565] Reading protoinst file protoinst_files/XADC_FIFO_inst_0.protoinst
+Time resolution is 1 ps
+open_wave_config C:/Users/nicol/Documents/GitHub/tx-16-QAM/prueba_xadc_tb_behav.wcfg
+WARNING: Simulation object /prueba_xadc_tb/alarm_out_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/busy_out_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/channel_out_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/dclk_in_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/eoc_out_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/eos_out_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/ot_out_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/reset_in_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/s_drp_0_daddr was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/s_drp_0_den was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/s_drp_0_di was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/s_drp_0_do was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/s_drp_0_drdy was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/s_drp_0_dwe was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/user_temp_alarm_out_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/vccaux_alarm_out_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/vccint_alarm_out_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/dclk_in_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/rd_en_fifo was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/fifo_dout was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/fifo_din was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/wr_clk was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/clk_out was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/locked was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/wr_data_count_0 was not found in the design.
+WARNING: Simulation object /prueba_xadc_tb/rd_data_count_0 was not found in the design.
+source FULL_QAM_TX_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'FULL_QAM_TX_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:26 . Memory (MB): peak = 1921.777 ; gain = 60.773
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+run: Time (s): cpu = 00:00:05 ; elapsed = 00:00:22 . Memory (MB): peak = 1938.137 ; gain = 9.168
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 ms
+WARNING: Behavioral models for independent clock FIFO configurations do not model synchronization delays. The behavioral models are functionally correct, and will represent the behavior of the configured FIFO. See the FIFO Generator User Guide for more information.
+run: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 1940.488 ; gain = 0.277
+run all
+run: Time (s): cpu = 00:01:33 ; elapsed = 00:05:31 . Memory (MB): peak = 1973.078 ; gain = 32.289
+run all
+run: Time (s): cpu = 00:00:32 ; elapsed = 00:01:00 . Memory (MB): peak = 1978.742 ; gain = 4.285
+save_wave_config {C:/Users/nicol/Documents/GitHub/tx-16-QAM/prueba_xadc_tb_behav.wcfg}
+save_wave_config {C:/Users/nicol/Documents/GitHub/tx-16-QAM/prueba_xadc_tb_behav.wcfg}

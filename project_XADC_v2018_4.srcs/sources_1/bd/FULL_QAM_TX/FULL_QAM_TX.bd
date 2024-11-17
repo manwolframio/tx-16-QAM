@@ -1,0 +1,660 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x97B3C41E456CEE11",
+      "device": "xc7vx485tffg1157-1",
+      "gen_directory": "../../../../project_XADC_v2018_4.gen/sources_1/bd/FULL_QAM_TX",
+      "name": "FULL_QAM_TX",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2021.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "CLOCKS_0": "",
+      "DDS_MULT_ADDER_0": "",
+      "XADC_FIFO_0": ""
+    },
+    "interface_ports": {
+      "s_drp_0_0": {
+        "mode": "Slave",
+        "vlnv_bus_definition": "xilinx.com:interface:drp:1.0",
+        "vlnv": "xilinx.com:interface:drp_rtl:1.0"
+      }
+    },
+    "ports": {
+      "rst_0": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "clk_in_36MHz_0": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "FULL_QAM_TX_clk_in_36MHz_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "36000000"
+          },
+          "FREQ_TOLERANCE_HZ": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "default"
+          }
+        }
+      },
+      "channel_out_0_0": {
+        "direction": "O",
+        "left": "4",
+        "right": "0"
+      },
+      "eoc_out_0_0": {
+        "direction": "O"
+      },
+      "TX_SIGNAL_0": {
+        "type": "data",
+        "direction": "O",
+        "left": "24",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 25}",
+            "value_src": "ip_prop"
+          }
+        }
+      },
+      "fifo_din_0": {
+        "direction": "I",
+        "left": "11",
+        "right": "0"
+      }
+    },
+    "components": {
+      "CLOCKS_0": {
+        "parameters": {
+          "ACTIVE_SIM_BD": {
+            "value": "CLOCKS.bd"
+          },
+          "ACTIVE_SYNTH_BD": {
+            "value": "CLOCKS.bd"
+          },
+          "ENABLE_DFX": {
+            "value": "0"
+          },
+          "LIST_SIM_BD": {
+            "value": "CLOCKS.bd"
+          },
+          "LIST_SYNTH_BD": {
+            "value": "CLOCKS.bd"
+          },
+          "LOCK_PROPAGATE": {
+            "value": "0"
+          }
+        },
+        "ports": {
+          "clk_192MHz": {
+            "type": "clk",
+            "direction": "O",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "192000000",
+                "value_src": "default"
+              },
+              "FREQ_TOLERANCE_HZ": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default"
+              }
+            }
+          },
+          "clk_52MHz": {
+            "type": "clk",
+            "direction": "O",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "52000000",
+                "value_src": "default"
+              },
+              "FREQ_TOLERANCE_HZ": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default"
+              }
+            }
+          },
+          "clk_576MHz": {
+            "type": "clk",
+            "direction": "O",
+            "parameters": {
+              "FREQ_HZ": {
+                "value": "576000000",
+                "value_src": "default"
+              },
+              "FREQ_TOLERANCE_HZ": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default"
+              }
+            }
+          },
+          "clk_in_36MHz": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "FULL_QAM_TX_clk_in_36MHz_0",
+                "value_src": "strong"
+              },
+              "FREQ_HZ": {
+                "value": "36000000",
+                "value_src": "strong"
+              },
+              "FREQ_TOLERANCE_HZ": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "strong"
+              }
+            }
+          },
+          "locked": {
+            "direction": "O"
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "strong"
+              }
+            }
+          }
+        },
+        "post_compiled_compname": "CLOCKS_inst_0",
+        "architecture": "virtex7",
+        "variant_info": {
+          "CLOCKS.bd": {
+            "scoped_diagram": "CLOCKS_inst_0.bd",
+            "design_checksum": "0x64C72496",
+            "ref_name": "CLOCKS",
+            "ref_subinst_path": "FULL_QAM_TX_CLOCKS_0",
+            "ref_type": "Block Design",
+            "source_type": "all",
+            "active": "all"
+          }
+        }
+      },
+      "DDS_MULT_ADDER_0": {
+        "parameters": {
+          "ACTIVE_SIM_BD": {
+            "value": "DDS_MULT_ADDER.bd"
+          },
+          "ACTIVE_SYNTH_BD": {
+            "value": "DDS_MULT_ADDER.bd"
+          },
+          "ENABLE_DFX": {
+            "value": "0"
+          },
+          "LIST_SIM_BD": {
+            "value": "DDS_MULT_ADDER.bd"
+          },
+          "LIST_SYNTH_BD": {
+            "value": "DDS_MULT_ADDER.bd"
+          },
+          "LOCK_PROPAGATE": {
+            "value": "0"
+          }
+        },
+        "ports": {
+          "clk_192MHz": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_CLKEN": {
+                "value": "aclken",
+                "value_src": "strong"
+              },
+              "ASSOCIATED_RESET": {
+                "value": "aresetn:rst:rst_0",
+                "value_src": "strong"
+              },
+              "CLK_DOMAIN": {
+                "value": "/CLOCKS_0/clk_wiz_1_clk_out1",
+                "value_src": "strong"
+              },
+              "FREQ_HZ": {
+                "value": "192000000",
+                "value_src": "strong"
+              },
+              "FREQ_TOLERANCE_HZ": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "strong"
+              }
+            }
+          },
+          "clk_576MHz": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_CLKEN": {
+                "value": "aclken",
+                "value_src": "strong"
+              },
+              "CLK_DOMAIN": {
+                "value": "/CLOCKS_0/clk_wiz_1_clk_out1",
+                "value_src": "strong"
+              },
+              "FREQ_HZ": {
+                "value": "576000000",
+                "value_src": "strong"
+              },
+              "FREQ_TOLERANCE_HZ": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "strong"
+              }
+            }
+          },
+          "rst": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "strong"
+              }
+            }
+          },
+          "data_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "din_valid": {
+            "direction": "I"
+          },
+          "TX_SIGNAL": {
+            "type": "data",
+            "direction": "O",
+            "left": "24",
+            "right": "0",
+            "parameters": {
+              "LAYERED_METADATA": {
+                "value": "xilinx.com:interface:datatypes:1.0 {DATA {datatype {name {attribs {resolve_type immediate dependency {} format string minimum {} maximum {}} value data} bitwidth {attribs {resolve_type generated dependency bitwidth format long minimum {} maximum {}} value 25} bitoffset {attribs {resolve_type immediate dependency {} format long minimum {} maximum {}} value 0} integer {signed {attribs {resolve_type generated dependency signed format bool minimum {} maximum {}} value TRUE}}}} DATA_WIDTH 25}",
+                "value_src": "default"
+              }
+            }
+          }
+        },
+        "post_compiled_compname": "DDS_MULT_ADDER_inst_0",
+        "architecture": "virtex7",
+        "variant_info": {
+          "DDS_MULT_ADDER.bd": {
+            "scoped_diagram": "DDS_MULT_ADDER_inst_0.bd",
+            "design_checksum": "0x3D3603EB",
+            "ref_name": "DDS_MULT_ADDER",
+            "ref_subinst_path": "FULL_QAM_TX_DDS_MULT_ADDER_0",
+            "ref_type": "Block Design",
+            "source_type": "all",
+            "active": "all"
+          }
+        }
+      },
+      "XADC_FIFO_0": {
+        "parameters": {
+          "ACTIVE_SIM_BD": {
+            "value": "XADC_FIFO.bd"
+          },
+          "ACTIVE_SYNTH_BD": {
+            "value": "XADC_FIFO.bd"
+          },
+          "ENABLE_DFX": {
+            "value": "0"
+          },
+          "LIST_SIM_BD": {
+            "value": "XADC_FIFO.bd"
+          },
+          "LIST_SYNTH_BD": {
+            "value": "XADC_FIFO.bd"
+          },
+          "LOCK_PROPAGATE": {
+            "value": "0"
+          }
+        },
+        "interface_ports": {
+          "Vp_Vn_0": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:diff_analog_io:1.0",
+            "vlnv": "xilinx.com:interface:diff_analog_io_rtl:1.0"
+          },
+          "s_drp_0": {
+            "mode": "Slave",
+            "vlnv_bus_definition": "xilinx.com:interface:drp:1.0",
+            "vlnv": "xilinx.com:interface:drp_rtl:1.0"
+          }
+        },
+        "ports": {
+          "alarm_out_0": {
+            "direction": "O"
+          },
+          "busy_out_0": {
+            "direction": "O"
+          },
+          "channel_out_0": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
+          },
+          "clk_52MHz": {
+            "direction": "I",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/CLOCKS_0/clk_wiz_0_clk_out1",
+                "value_src": "strong"
+              },
+              "FREQ_HZ": {
+                "value": "52000000",
+                "value_src": "strong"
+              },
+              "FREQ_TOLERANCE_HZ": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "strong"
+              }
+            }
+          },
+          "clk_out": {
+            "direction": "O",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "/CLOCKS_0/clk_wiz_0_clk_out1",
+                "value_src": "default"
+              },
+              "FREQ_HZ": {
+                "value": "52000000",
+                "value_src": "default"
+              },
+              "FREQ_TOLERANCE_HZ": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default"
+              }
+            }
+          },
+          "eoc_out_0": {
+            "direction": "O"
+          },
+          "eos_out_0": {
+            "direction": "O"
+          },
+          "fifo_din": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "fifo_dout": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "fifo_full": {
+            "direction": "O"
+          },
+          "locked": {
+            "direction": "O"
+          },
+          "locked_clk": {
+            "direction": "I"
+          },
+          "ot_out_0": {
+            "direction": "O"
+          },
+          "rd_data_count_0": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "rd_en_fifo": {
+            "direction": "O"
+          },
+          "reset_in_0": {
+            "type": "rst",
+            "direction": "I",
+            "parameters": {
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "strong"
+              },
+              "POLARITY": {
+                "value": "ACTIVE_HIGH",
+                "value_src": "strong"
+              }
+            }
+          },
+          "user_temp_alarm_out_0": {
+            "direction": "O"
+          },
+          "vccaux_alarm_out_0": {
+            "direction": "O"
+          },
+          "vccint_alarm_out_0": {
+            "direction": "O"
+          },
+          "wr_clk": {
+            "direction": "O",
+            "parameters": {
+              "CLK_DOMAIN": {
+                "value": "XADC_FIFO_inst_0_Contador_52_0_0_wr_clk",
+                "value_src": "default"
+              },
+              "FREQ_HZ": {
+                "value": "100000000",
+                "value_src": "default"
+              },
+              "FREQ_TOLERANCE_HZ": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "INSERT_VIP": {
+                "value": "0",
+                "value_src": "default"
+              },
+              "PHASE": {
+                "value": "0.0",
+                "value_src": "default"
+              }
+            }
+          },
+          "wr_data_count_0": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "wr_rst_busy_0": {
+            "direction": "O"
+          }
+        },
+        "post_compiled_compname": "XADC_FIFO_inst_0",
+        "architecture": "virtex7",
+        "variant_info": {
+          "XADC_FIFO.bd": {
+            "scoped_diagram": "XADC_FIFO_inst_0.bd",
+            "design_checksum": "0xA5698BBF",
+            "ref_name": "XADC_FIFO",
+            "ref_subinst_path": "FULL_QAM_TX_XADC_FIFO_0",
+            "ref_type": "Block Design",
+            "source_type": "all",
+            "active": "all"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "s_drp_0_0_1": {
+        "interface_ports": [
+          "s_drp_0_0",
+          "XADC_FIFO_0/s_drp_0"
+        ]
+      }
+    },
+    "nets": {
+      "CLOCKS_0_clk_192MHz": {
+        "ports": [
+          "CLOCKS_0/clk_192MHz",
+          "DDS_MULT_ADDER_0/clk_192MHz"
+        ]
+      },
+      "CLOCKS_0_clk_52MHz": {
+        "ports": [
+          "CLOCKS_0/clk_52MHz",
+          "XADC_FIFO_0/clk_52MHz"
+        ]
+      },
+      "CLOCKS_0_clk_576MHz": {
+        "ports": [
+          "CLOCKS_0/clk_576MHz",
+          "DDS_MULT_ADDER_0/clk_576MHz"
+        ]
+      },
+      "CLOCKS_0_locked": {
+        "ports": [
+          "CLOCKS_0/locked",
+          "XADC_FIFO_0/locked_clk"
+        ]
+      },
+      "DDS_MULT_ADDER_0_TX_SIGNAL": {
+        "ports": [
+          "DDS_MULT_ADDER_0/TX_SIGNAL",
+          "TX_SIGNAL_0"
+        ]
+      },
+      "XADC_FIFO_0_channel_out_0": {
+        "ports": [
+          "XADC_FIFO_0/channel_out_0",
+          "channel_out_0_0"
+        ]
+      },
+      "XADC_FIFO_0_eoc_out_0": {
+        "ports": [
+          "XADC_FIFO_0/eoc_out_0",
+          "eoc_out_0_0"
+        ]
+      },
+      "XADC_FIFO_0_fifo_dout": {
+        "ports": [
+          "XADC_FIFO_0/fifo_dout",
+          "DDS_MULT_ADDER_0/data_in"
+        ]
+      },
+      "XADC_FIFO_0_rd_en_fifo": {
+        "ports": [
+          "XADC_FIFO_0/rd_en_fifo",
+          "DDS_MULT_ADDER_0/din_valid"
+        ]
+      },
+      "clk_in_36MHz_0_1": {
+        "ports": [
+          "clk_in_36MHz_0",
+          "CLOCKS_0/clk_in_36MHz"
+        ]
+      },
+      "fifo_din_0_1": {
+        "ports": [
+          "fifo_din_0",
+          "XADC_FIFO_0/fifo_din"
+        ]
+      },
+      "rst_0_1": {
+        "ports": [
+          "rst_0",
+          "CLOCKS_0/rst",
+          "XADC_FIFO_0/reset_in_0",
+          "DDS_MULT_ADDER_0/rst"
+        ]
+      }
+    }
+  }
+}
